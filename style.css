@@ -39,6 +39,7 @@
   align-items: flex-end;
   min-height: 42px; /*Вписывается с min-height: 62px;*/
   margin-top: 28px;
+  padding: 0;
   width: calc(100% - 96px); /*Вписывается с width: calc(100% - 89px)*/
 }
 
@@ -58,6 +59,7 @@
 .menu {
   display: flex;
   flex-wrap: wrap; /*Чтобы при увеличении количества ссылок, они не ломались*/
+  padding: 0;
 }
 
 .menu__lang-link {
@@ -121,25 +123,28 @@
   display: flex;
   justify-content: center;
   margin: 48px auto 0;
+  padding: 0;
 }
 
 .lead__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  /*position: relative;
   top: 0;
-  left: 0;
+  left: 0;*/
   box-sizing: border-box;
-  object-fit: cover;
-  object-position: left top;
+  /*object-fit: cover;
+  object-position: left top;*/
   /*min-height: 406px;*/
   margin: 0 auto;
+  padding: 0;
   width: calc(100% - 96px);
 }
 
 .lead__title {
   margin: 0 auto;
+  padding: 0;
   max-width: 77.6%; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
   word-break: break-word; /*Важно чтобы добавлять новый текст
   легко перемещался на новые строки*/
@@ -155,6 +160,7 @@
 
 .lead__subtitle {
   margin: 32px auto 56px auto; /*Иначе моём миксе у figure и img margin 56 появляется*/
+  padding: 0;
   max-width: 68.97%; /*640 от 928 68.97%*/
   word-break: break-word;
   font-style: normal;
@@ -169,6 +175,7 @@
 
 .lead__image {
   margin: 0;
+  padding: 0;
   width: 100%;
   /*object-fit: contain;*/
   /*object-position: center center;*/
@@ -176,8 +183,9 @@
 
 .lead__caption {
   margin-top: 8px;
+  padding: 0;
   min-width: 158px;
-  max-width: 17.1%; /*Должно быть 17, но Perf Pix*/
+  max-width: 17.4%; /*Должно быть 17,1, но Perf Pix*/
   font-style: normal;
   font-weight: 400;
   font-size: 0.62rem;
@@ -186,4 +194,70 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  margin: 94px auto 0; /*Должно быть 92, но Perf Pix*/
+  padding: 0;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /*position: relative;
+  top: 0;
+  left: 0;*/
+  box-sizing: border-box;
+  margin: 0 27.3% 0 4.69%;
+  padding: 0;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  width: 100%; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
+  word-break: break-word; /*Важно чтобы добавлять новый текст
+  легко перемещался на новые строки*/
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.3rem;
+  line-height: 1.07;
+/* or 104% */
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.intro__text {
+  margin: 40px 0 0 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 163%;
+  /* or 26px */
+  letter-spacing: 0.002em;
+}
+
+.intro__list {
+  margin: 33px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__list-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1.57;
+  /* or 150% */
+  letter-spacing: 0.04em;
+}
+
+.span-accent {
+  font-weight: 400;
+  letter-spacing: 0;
 }
