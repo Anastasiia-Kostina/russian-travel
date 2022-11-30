@@ -45,14 +45,14 @@
 .logo {
   display: flex;
   flex: 0, 1, auto;
-  background: url(./images/img-screen-1024/header-logo.svg);
+  background: url(./images/header-logo.svg);
   object-fit: cover;
   background-size: cover; /*Без него и только с object-fit 
   терялась картинка в истинном масштабе и в 320px*/
   background-position: center center;
   background-repeat: no-repeat;
-  width: 176px;
-  height: 52px; /*Вписывается с height: 60px;*/
+  width: 176px; /*!Не забыть поменять в медиа для 320, max на 1280 поставить!*/
+  height: 52px; /*Вписывается с height: 60px;*/ /*!Не забыть поменять в медиа для 320, max на 1280 поставить! */
 }
 
 .menu {
