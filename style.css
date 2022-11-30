@@ -3,15 +3,15 @@
   margin: 0 auto; /*без auto на больших разрешениях страница центрируется слева.*/
   padding: 0;
   font-family: 'Inter', Arial;
-  text-rendering: optimizeLegibility;
-  color: #FFFFFF;
-  background-color: #2A2C2F;
-  list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  color: #FFFFFF;
+  background-color: #2A2C2F;
+  list-style: none;
 }
 
 .header {
@@ -21,7 +21,7 @@
   /*width: 100%; И так без margin от page*/
 }
 
-.border {
+/*.border {
   border: 1px solid red;
 }
 
@@ -31,7 +31,7 @@
 
 .border_gr {
   border: 1px solid green;
-}
+}*/
 
 .header__container {
   display: flex;
@@ -47,7 +47,7 @@
   flex: 0, 1, auto;
   background: url(./images/header-logo.svg);
   object-fit: cover;
-  background-size: cover; /*Без него и только с object-fit 
+  background-size: cover; /*Без него и только с object-fit
   терялась картинка в истинном масштабе и в 320px*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -56,15 +56,15 @@
 }
 
 .menu {
-  display: flex;  
-  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap; /*Чтобы при увеличении количества ссылок, они не ломались*/
 }
 
 .menu__lang-link {
   margin-right: 1.2rem;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem; /*Вписывается с line-height: 2rem, но по макету 1.75rem; 
+  line-height: 2rem; /*Вписывается с line-height: 2rem, но по макету 1.75rem;
   Чекнула в Perf Pix */
   letter-spacing: 0em;
   /*text-align: right;*/
@@ -115,4 +115,75 @@
 .menu__lang-link:last-of-type {
   display: block;
   margin-right: 0;
+}
+
+.lead {
+  display: flex;
+  justify-content: center;
+  margin: 48px auto 0;
+}
+
+.lead__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: left top;
+  /*min-height: 406px;*/
+  margin: 0 auto;
+  width: calc(100% - 96px);
+}
+
+.lead__title {
+  margin: 0 auto;
+  max-width: 77.6%; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
+  word-break: break-word; /*Важно чтобы добавлять новый текст
+  легко перемещался на новые строки*/
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 1.04;
+/* or 104% */
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.lead__subtitle {
+  margin: 32px auto 56px auto; /*Иначе моём миксе у figure и img margin 56 появляется*/
+  max-width: 68.97%; /*640 от 928 68.97%*/
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.2; /*Внимательно! Нужно интерлиньяж считать от font-size, не rem*/
+/* or 120% */
+  letter-spacing: 0.003em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.lead__image {
+  margin: 0;
+  width: 100%;
+  /*object-fit: contain;*/
+  /*object-position: center center;*/
+}
+
+.lead__caption {
+  margin-top: 8px;
+  min-width: 158px;
+  max-width: 17.1%; /*Должно быть 17, но Perf Pix*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.62rem;
+  line-height: 0.8; /*Должно быть 1.4, но Perf Pix*/
+  /* identical to box height, or 140% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }

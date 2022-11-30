@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <!--<link rel="stylesheet" href="./pages/index.css">-->
   <title>Путешествия по России</title>
-  <meta name="description" content="Третий спринт на Яндекс Практикуме. 
+  <meta name="description" content="Третий спринт на Яндекс Практикуме.
   Проект 'Путешествия по России'.">
   <meta name="keywords" content="путешествия, поездки, путешествие на машине,
   путешествие на автомобиле, автомобильная поездка, спланировать поездку,
@@ -19,8 +19,8 @@
   Россия, красивейшее место, красивейшие места России, природный,
   Саян, Путоран, Куршская коса, Калининградская область, Кольский,
   Саамская тундра, тайга, Териберк, арктический фестиваль,
-  сияние Мурманск, горный, горы, Алтайский край, Алтай, озера, озеро, Байкал, зима, 
-  зимний Байкал, скийоринг на Байкале, лыжи на Байкале, Карелия, Водлозеро, лиственный лес, Урал,  
+  сияние Мурманск, горный, горы, Алтайский край, Алтай, озера, озеро, Байкал, зима,
+  зимний Байкал, скийоринг на Байкале, лыжи на Байкале, Карелия, Водлозеро, лиственный лес, Урал,
   Яндекс Практикум, проект, адаптивный сайт, адаптирование, резиновый сайт,
   оптимизация сайта, разные экраны, страница сайта, гриды, грид-контейнер">
   <meta name="author" content="Анастасия Костина">
@@ -30,11 +30,25 @@
     <div class="header__container border">
       <div class="logo border"></div>
       <nav class="menu border">
-        <a class="menu__lang-link menu__lang-link_ru active border" lang="ru" href="#">Ru</a> 
+        <a class="menu__lang-link menu__lang-link_ru active border" lang="ru" href="#">Ru</a>
         <!--Активная ссылка и подчёркивание для неё-->
         <a class="menu__lang-link menu__lang-link_en border" lang="en" href="#">En</a>
       </nav>
     </div>
   </header>
+  <main class="content border">
+    <section class="lead border">
+      <div class="lead__container border">
+        <h1 class="lead__title border">Путешествия по России</h1>
+        <p class="lead__subtitle border">Настоящая страна не в выпусках новостей, а здесь.</p>
+        <figure class="lead__image border"> <!--Без класса всё ломается-->
+          <img src="./images/lead-polka.jpg" alt="Фото человека в плацкартном вагоне"
+          class="lead__image border">
+          <figcaption class="lead__image lead__caption border">ваша полка — верхняя</figcaption>
+        </figure> <!--Mb class="lead__image lead__caption border"-->
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
