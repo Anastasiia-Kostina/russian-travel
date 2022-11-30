@@ -1,0 +1,118 @@
+.page {
+  max-width: 2560px;
+  margin: 0 auto; /*без auto на больших разрешениях страница центрируется слева.*/
+  padding: 0;
+  font-family: 'Inter', Arial;
+  text-rendering: optimizeLegibility;
+  color: #FFFFFF;
+  background-color: #2A2C2F;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  /*align-content: flex-end;*/
+  /*width: 100%; И так без margin от page*/
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.border_bl {
+  border: 1px solid blue;
+}
+
+.border_gr {
+  border: 1px solid green;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 42px; /*Вписывается с min-height: 62px;*/
+  margin-top: 28px;
+  width: calc(100% - 96px); /*Вписывается с width: calc(100% - 89px)*/
+}
+
+.logo {
+  display: flex;
+  flex: 0, 1, auto;
+  background: url(./images/img-screen-1024/header-logo.svg);
+  object-fit: cover;
+  background-size: cover; /*Без него и только с object-fit 
+  терялась картинка в истинном масштабе и в 320px*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 176px;
+  height: 52px; /*Вписывается с height: 60px;*/
+}
+
+.menu {
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.menu__lang-link {
+  margin-right: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem; /*Вписывается с line-height: 2rem, но по макету 1.75rem; 
+  Чекнула в Perf Pix */
+  letter-spacing: 0em;
+  /*text-align: right;*/
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Inter;
+}
+
+.menu__lang-link.active {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.menu__lang-link:hover {
+  transition: opacity .2s linear;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.menu__lang-link.active::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -3px; /*Чтобы Ru En встали на место в Perf Pix*/
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+.menu__lang-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: width 0.4s ease-in-out;
+}
+
+.menu__lang-link:hover:after {
+  /*transition: opacity .2s linear;
+  opacity: 0.5;*/
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu__lang-link:last-of-type {
+  display: block;
+  margin-right: 0;
+}
