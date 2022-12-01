@@ -1,5 +1,5 @@
 .page {
-  max-width: 2560px;
+  min-width: 320px;
   margin: 0 auto; /*без auto на больших разрешениях страница центрируется слева.*/
   padding: 0;
   font-family: 'Inter', Arial;
@@ -17,11 +17,13 @@
 .header {
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 0;
   /*align-content: flex-end;*/
   /*width: 100%; И так без margin от page*/
 }
 
-/*.border {
+.border {
   border: 1px solid red;
 }
 
@@ -31,34 +33,53 @@
 
 .border_gr {
   border: 1px solid green;
-}*/
+}
 
 .header__container {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
   align-items: flex-end;
-  min-height: 42px; /*Вписывается с min-height: 62px;*/
-  margin-top: 28px;
+  height: calc(10vh - 28px); /*Вписывается с min-height: 62px;*/
+  margin: 28px auto 0 auto;
   padding: 0;
   width: calc(100% - 96px); /*Вписывается с width: calc(100% - 89px)*/
 }
 
-.logo {
+/*.logo {
   display: flex;
-  flex: 0, 1, auto;
-  background: url(./images/header-logo.svg);
-  object-fit: cover;
-  background-size: cover; /*Без него и только с object-fit
+  flex: 0 1 auto; /* flex: 0.2 1 auto; при background-size: contain;
+  Чтобы на 4000 лого норм растягивалось*/
+ /* background: url(./images/header-logo.svg);
+  /*object-fit: cover; Не надо вообще*/
+ /* background-size: cover; /*Без него и только с object-fit
   терялась картинка в истинном масштабе и в 320px*/
-  background-position: center center;
+ /* background-position: center;
   background-repeat: no-repeat;
-  width: 176px; /*!Не забыть поменять в медиа для 320, max на 1280 поставить!*/
-  height: 52px; /*Вписывается с height: 60px;*/ /*!Не забыть поменять в медиа для 320, max на 1280 поставить! */
+  width: 19%; /*Max не подходит.!Не забыть поменять в медиа для 320, max на 1280 поставить!*/
+  /*height: 100%; /*52px; /*Вписывается с height: 60px;*/
+  /*!Не забыть поменять в медиа для 320, max на 1280 поставить!
+}*/
+
+.logo { /*More adaptive for bigger screens*/
+  display: flex;
+  flex: 0 1 auto;
+  background: url(./images/header-logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19%;
+  height: 6.5vh;
+  object-fit: contain;
+  object-position: center;
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap; /*Чтобы при увеличении количества ссылок, они не ломались*/
+  align-items: stretch;
   padding: 0;
 }
 
@@ -69,10 +90,8 @@
   line-height: 2rem; /*Вписывается с line-height: 2rem, но по макету 1.75rem;
   Чекнула в Perf Pix */
   letter-spacing: 0em;
-  /*text-align: right;*/
   color: #FFFFFF;
   text-decoration: none;
-  font-family: Inter;
 }
 
 .menu__lang-link.active {
@@ -159,7 +178,8 @@
 }
 
 .lead__subtitle {
-  margin: 32px auto 56px auto; /*Иначе моём миксе у figure и img margin 56 появляется*/
+  /*margin: 32px auto 56px auto; /*Иначе моём миксе у figure и img margin 56 появляется*/
+  margin: 32px auto 0;
   padding: 0;
   max-width: 68.97%; /*640 от 928 68.97%*/
   word-break: break-word;
@@ -181,7 +201,11 @@
   /*object-position: center center;*/
 }
 
-.lead__caption {
+.lead__image_figure_container {
+  margin-top: 56px;
+}
+
+.lead__image_figure_caption {
   margin-top: 8px;
   padding: 0;
   min-width: 158px;
