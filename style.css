@@ -23,7 +23,7 @@
   /*width: 100%; И так без margin от page*/
 }
 
-.border {
+/*.border {
   border: 1px solid red;
 }
 
@@ -33,7 +33,7 @@
 
 .border_gr {
   border: 1px solid green;
-}
+}*/
 
 .header__container {
   display: flex;
@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   align-items: flex-end;
-  height: calc(10vh - 28px); /*Вписывается с min-height: 62px;*/
+  height: calc(10.5vh - 28px); /*Вписывается с min-height: 62px; not 10vh сыпется lead*/
   margin: 28px auto 0 auto;
   padding: 0;
   width: calc(100% - 96px); /*Вписывается с width: calc(100% - 89px)*/
@@ -149,13 +149,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*position: relative;
-  top: 0;
-  left: 0;*/
   box-sizing: border-box;
-  /*object-fit: cover;
-  object-position: left top;*/
-  /*min-height: 406px;*/
   margin: 0 auto;
   padding: 0;
   width: calc(100% - 96px);
@@ -164,15 +158,14 @@
 .lead__title {
   margin: 0 auto;
   padding: 0;
-  max-width: 77.6%; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
+  max-width: 93.8vh; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
   word-break: break-word; /*Важно чтобы добавлять новый текст
   легко перемещался на новые строки*/
   font-style: normal;
   font-weight: 900;
   font-size: 6rem;
   line-height: 1.04;
-/* or 104% */
-  letter-spacing: 0.01em;
+  letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;
 }
