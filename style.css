@@ -42,10 +42,10 @@
   top: 0;
   left: 0;
   align-items: flex-end;
-  height: calc(10.5vh - 28px); /*Вписывается с min-height: 62px; not 10vh сыпется lead*/
-  margin: 28px auto 0 auto;
+  height: calc(10.5vh - 1.75rem); /*not 10vh сыпется lead*/
+  margin: 1.75rem auto 0 auto; /*margin: 28px auto 0 auto;*/
   padding: 0;
-  width: calc(100% - 96px); /*Вписывается с width: calc(100% - 89px)*/
+  width: calc(100% - 6rem); /*Вписывается с width: calc(100% - 89px); Works calc(100% - 96px)*/
 }
 
 /*.logo {
@@ -80,6 +80,7 @@
   display: flex;
   flex-wrap: wrap; /*Чтобы при увеличении количества ссылок, они не ломались*/
   align-items: stretch;
+  margin: 0;
   padding: 0;
 }
 
@@ -141,7 +142,7 @@
 .lead {
   display: flex;
   justify-content: center;
-  margin: 48px auto 0;
+  margin: 3rem auto 0; /*Was margin: 48px auto 0;*/
   padding: 0;
 }
 
@@ -152,13 +153,15 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  width: calc(100% - 96px);
+  width: calc(100% - 6rem); /*Works calc(100% - 96px)*/
 }
 
 .lead__title {
   margin: 0 auto;
   padding: 0;
-  max-width: 93.8vh; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
+  max-width: 93.8vh; /*720 от 928 77,59%;
+  for 1280 min-width: 70.4vh OR max-width: 60.8%;
+  */ /*Марджины блоков в lead__container*/
   word-break: break-word; /*Важно чтобы добавлять новый текст
   легко перемещался на новые строки*/
   font-style: normal;
@@ -190,18 +193,18 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  /*object-fit: contain;*/
+  object-fit: contain; /*Для smoother breaks*/
   /*object-position: center center;*/
 }
 
 .lead__image_figure_container {
-  margin-top: 56px;
+  margin-top: 3.5rem; /*Was margin-top: 56px;*/
 }
 
-.lead__image_figure_caption {
-  margin-top: 8px;
+.lead__image_figure_caption { /*После не забыть увеличить пропорции для бОльших экр.*/
+  margin-top: 0.5rem; /*margin-top: 8px;*/
   padding: 0;
-  min-width: 158px;
+  min-width: 9.87rem; /*min-width: 158px;*/
   max-width: 17.4%; /*Должно быть 17,1, но Perf Pix*/
   font-style: normal;
   font-weight: 400;
@@ -216,7 +219,7 @@
 .intro {
   display: flex;
   justify-content: flex-start;
-  margin: 94px auto 0; /*Должно быть 92, но Perf Pix*/
+  margin: 5.68rem auto 0; /*Должно быть 91, но Perf Pix*/
   padding: 0;
 }
 
@@ -228,7 +231,11 @@
   top: 0;
   left: 0;*/
   box-sizing: border-box;
-  margin: 0 27.3% 0 4.69%;
+  margin: 0 28% 0 4.7%; /*Для width: calc(100% - 334px) подходит
+  margin: 0 28% 0 4.68%; Раньше было 0 27.3% 0 4.69%;
+  Для бОльших margin: 0 34.5% 0 11.6%;
+    width: calc(100% - 334px);*/
+  width: calc(100% - 20.87rem);
   padding: 0;
 }
 
@@ -240,27 +247,27 @@
   легко перемещался на новые строки*/
   font-style: normal;
   font-weight: 900;
-  font-size: 3.3rem;
-  line-height: 1.07;
+  font-size: 3.39rem; /*Was 3.39rem;*/
+  line-height: 1.074; /*Was 1.074;*/
 /* or 104% */
-  letter-spacing: 0.01em;
+  letter-spacing: 0; /*Was 0.01em;*/
   text-align: left;
   color: #FFFFFF;
 }
 
 .intro__text {
-  margin: 40px 0 0 0;
+  margin: 2.5rem 0 0 0; /*Was margin: 40px 0 0 0;*/
   padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 163%;
+  line-height: 1.65rem; /*Was 163%*/
   /* or 26px */
-  letter-spacing: 0.002em;
+  letter-spacing: 0;
 }
 
 .intro__list {
-  margin: 33px 0 0 0;
+  margin: 2.06rem 0 0 0; /*Was margin: 33px 0 0 0;*/
   padding: 0;
   list-style: none;
 }
@@ -278,3 +285,4 @@
   font-weight: 400;
   letter-spacing: 0;
 }
+
