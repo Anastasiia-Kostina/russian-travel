@@ -44,8 +44,18 @@
         <figure class="lead__image lead__image_figure_container border">
           <!--Без класса всё ломается и чтобы не делать много отступов subt,
             с ключом figure_container-->
-          <img src="./images/lead-polka.jpg" alt="Фото человека в плацкартном вагоне"
-          class="lead__image border">
+          <picture class="lead__image border_bl">
+            <source media="(max-width: 1280px)"
+            srcset="./images/1280_lead-polka.jpg">
+            <source media="(max-width: 1024px)"
+            srcset="./images/1024_lead-polka.jpg">
+            <source media="(max-width: 768px)"
+            srcset="./images/768_lead-polka.jpg">
+            <source media="(max-width: 425px)"
+            srcset="./images/320_lead-polka.jpg">
+            <img src="./images/1024_lead-polka.jpg" alt="Фото человека в плацкартном вагоне"
+            class="lead__image border_gr">
+          </picture>
           <figcaption class="lead__image lead__image_figure_caption border">ваша полка — верхняя</figcaption>
         </figure> <!--!Тег picture не забудь параллельно!-->
       </div>
@@ -80,6 +90,154 @@
           </li>
         </ul>
       </article>
+    </section>
+    <section class="photo-grid border">
+      <div class="photo-grid__items border_bl">
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-train.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-train.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-train.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-train.jpg">
+          <img src="./images/1024_photo-grid-train.jpg" alt="Фото природы из окна вагона"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-atharva-tulsi.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-atharva-tulsi.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-atharva-tulsi.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-atharva-tulsi.jpg">
+          <img src="./images/1024_photo-grid-atharva-tulsi.jpg" alt="Фото Тулси, Эльбрус"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-tuman.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-tuman.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-tuman.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-tuman.jpg">
+          <img src="./images/1024_photo-grid-tuman.jpg" alt="Фото пес на стоге сена, туман"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-sochi.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-sochi.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-sochi.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-sochi.jpg">
+          <img src="./images/1024_photo-grid-sochi.jpg" alt="Фото Сочи, туманный лес"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-arisa.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-arisa.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-arisa.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-arisa.jpg">
+          <img src="./images/1024_photo-grid-arisa.jpg" alt="Фото Ариса, лед"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-baikal.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-baikal.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-baikal.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-baikal.jpg">
+          <img src="./images/1024_photo-grid-baikal.jpg" alt="Фото Байкал, берег"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-elbrus.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-elbrus.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-elbrus.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-elbrus.jpg">
+          <img src="./images/1024_photo-grid-elbrus.jpg" alt="Фото Эльбрус, горы"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-kondratiev.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-kondratiev.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-kondratiev.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-kondratiev.jpg">
+          <img src="./images/1024_photo-grid-kondratiev.jpg" alt="Фото знак перехода"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-kamchatka-1.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-kamchatka-1.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-kamchatka-1.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-kamchatka-1.jpg">
+          <img src="./images/1024_photo-grid-kamchatka-1.jpg" alt="Фото Камчатка, пейзаж"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-kamchatka-2.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-kamchatka-2.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-kamchatka-2.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-kamchatka-2.jpg">
+          <img src="./images/1024_photo-grid-kamchatka-2.jpg" alt="Фото Камчатка, горный пейзаж"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-baikal-2.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-baikal-2.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-baikal-2.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-baikal-2.jpg">
+          <img src="./images/1024_photo-grid-baikal-2.jpg" alt="Фото Байкал, пейзаж"
+          class="photo-grid__item">
+        </picture>
+        <picture class="photo-grid__item border">
+          <source media="(max-width: 1280px)"
+          srcset="./images/1280_photo-grid-ergaki.jpg">
+          <source media="(max-width: 1024px)"
+          srcset="./images/1024_photo-grid-ergaki.jpg">
+          <source media="(max-width: 768px)"
+          srcset="./images/768_photo-grid-ergaki.jpg">
+          <source media="(max-width: 425px)"
+          srcset="./images/320_photo-grid-ergaki.jpg">
+          <img src="./images/1024_photo-grid-ergaki.jpg" alt="Фото Ергаки, туман"
+          class="photo-grid__item">
+        </picture>
+      </div>
     </section>
 
   </main>

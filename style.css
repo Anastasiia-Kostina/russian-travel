@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   align-items: flex-end;
-  height: calc(10.5vh - 1.75rem); /*not 10vh сыпется lead*/
+  max-height: calc(10.5vh - 1.75rem); /*not 10vh сыпется lead Заменила height на max-height */
   margin: 1.75rem auto 0 auto; /*margin: 28px auto 0 auto;*/
   padding: 0;
   width: calc(100% - 6rem); /*Вписывается с width: calc(100% - 89px); Works calc(100% - 96px)*/
@@ -140,8 +140,8 @@
 }
 
 .lead {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   margin: 3rem auto 0; /*Was margin: 48px auto 0;*/
   padding: 0;
 }
@@ -154,6 +154,7 @@
   margin: 0 auto;
   padding: 0;
   width: calc(100% - 6rem); /*Works calc(100% - 96px)*/
+  min-height: calc(100% - 3.06rem);
 }
 
 .lead__title {
@@ -167,7 +168,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 6rem;
-  line-height: 1.04;
+  line-height: 1.05; /*1.04 actually*/
   letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;
@@ -175,7 +176,7 @@
 
 .lead__subtitle {
   /*margin: 32px auto 56px auto; /*Иначе моём миксе у figure и img margin 56 появляется*/
-  margin: 32px auto 0;
+  margin: 2rem auto 0;
   padding: 0;
   max-width: 68.97%; /*640 от 928 68.97%*/
   word-break: break-word;
@@ -193,7 +194,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  object-fit: contain; /*Для smoother breaks*/
+  object-fit: cover; /*Для smoother breaks*/
   /*object-position: center center;*/
 }
 
@@ -209,7 +210,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 0.62rem;
-  line-height: 0.8; /*Должно быть 1.4, но Perf Pix*/
+  line-height: inherit; /*Должно быть 1.4, но Perf Pix*/
   /* identical to box height, or 140% */
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -217,9 +218,9 @@
 }
 
 .intro {
-  display: flex;
-  justify-content: flex-start;
-  margin: 5.68rem auto 0; /*Должно быть 91, но Perf Pix*/
+  /*display: flex;
+  justify-content: flex-start;*/
+  margin: 5.75rem auto 0; /*Должно быть 92, но Perf Pix*/
   padding: 0;
 }
 
@@ -236,6 +237,7 @@
   Для бОльших margin: 0 34.5% 0 11.6%;
     width: calc(100% - 334px);*/
   width: calc(100% - 20.87rem);
+  min-height: calc(100% - 5.75rem);
   padding: 0;
 }
 
@@ -261,7 +263,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.65rem; /*Was 163%*/
+  line-height: 1.6rem; /*Was 163% sometimes 1.65rem*/
   /* or 26px */
   letter-spacing: 0;
 }
@@ -285,4 +287,42 @@
   font-weight: 400;
   letter-spacing: 0;
 }
+
+.photo-grid {
+  margin: 5.75rem 0 0; /*Was margin: 48px auto 0;*/
+  padding: 0;
+}
+
+.photo-grid__items {
+  display: grid;
+  margin: 0 4.7% 0 4.7%;
+  padding: 0;
+  max-width: calc(100% - 4.75rem);
+  min-height: calc(100% - 5.75rem);
+  grid-template-columns: repeat(3, minmax(225px, max-content)); /*225px*/
+  grid-template-rows: repeat(4, minmax(min-content, 1fr));
+  gap: 14px; /*14px*/
+}
+/*Для 1024*/
+.photo-grid__item {
+  min-width: 300px; /*300px*/
+  max-height: 225px; /*225px*/
+}
+
+/*.photo-grid__items {
+  display: grid;
+  margin: 0 3.8% 0 3.8%;
+  padding: 0;
+  max-width: calc(100% - 4.75rem);
+  min-height: calc(100% - 5.75rem);
+  grid-template-columns: repeat(4, minmax(213px, max-content)); /*213px*/
+  /*grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+  gap: 16px; 16px
+}*/
+/*Для 1280 и
+.photo-grid__item {
+  max-width: 284px;
+  max-height: 213px;
+}*/
+
 
