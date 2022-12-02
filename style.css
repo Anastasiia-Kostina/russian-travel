@@ -1,5 +1,6 @@
 .page {
   min-width: 320px;
+  min-height: 240px;
   margin: 0 auto; /*без auto на больших разрешениях страница центрируется слева.*/
   padding: 0;
   font-family: 'Inter', Arial;
@@ -35,7 +36,8 @@
   border: 1px solid green;
 }*/
 
-.header__container {
+/*На 1024 х 600 Nest Hub НЕ РАБОТАЕТ как надо*/
+/*.header__container {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -43,11 +45,12 @@
   left: 0;
   align-items: flex-end;
   max-height: calc(10.5vh - 1.75rem); /*not 10vh сыпется lead Заменила height на max-height */
-  margin: 1.75rem auto 0 auto; /*margin: 28px auto 0 auto;*/
-  padding: 0;
-  width: calc(100% - 6rem); /*Вписывается с width: calc(100% - 89px); Works calc(100% - 96px)*/
-}
+  /*margin: 1.75rem auto 0 auto; /*margin: 28px auto 0 auto;*/
+  /*padding: 0;
+  /*width: calc(100% - 6rem); /*Вписывается с width: calc(100% - 89px); Works calc(100% - 96px)*/
+/*}*/
 
+/*Old*/
 /*.logo {
   display: flex;
   flex: 0 1 auto; /* flex: 0.2 1 auto; при background-size: contain;
@@ -63,7 +66,8 @@
   /*!Не забыть поменять в медиа для 320, max на 1280 поставить!
 }*/
 
-.logo { /*More adaptive for bigger screens*/
+/*More adaptive for bigger screens Но на 1024 х 600 Nest Hub НЕ РАБОТАЕТ как надо*/
+/*.logo {
   display: flex;
   flex: 0 1 auto;
   background: url(./images/header-logo.svg);
@@ -74,7 +78,50 @@
   height: 6.5vh;
   object-fit: contain;
   object-position: center;
+}*/
+
+/*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-items: flex-end;
+  max-height: calc(100vh - 3.25rem);
+  margin: 1.75rem auto 0 auto;
+  padding: 0;
+  width: calc(100% - 6rem);
 }
+
+/*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
+.logo {
+  display: flex;
+  flex: 0 1 auto;
+  background: url(./images/header-logo.svg);
+  background-size: cover; /*Меняла по ср со старым*/
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19%; /*1024x600 19%; 1280x800 22vh;*/
+  height: 8.68vh; /*Важно, без - не влезал лого;
+  Для 1280 x 800 Nest Hub Max РАБОТАЕТ 6.2vh;*/
+  object-fit: contain;
+  object-position: center;
+}
+
+/*На 1280 х 800 Nest Hub РАБОТАЕТ как надо*/
+/*.logo {
+  display: flex;
+  flex: 0 1 auto;
+  background: url(./images/header-logo.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 22vh;
+  height: 6.2vh;
+  object-fit: contain;
+  object-position: center;
+}*/
 
 .menu {
   display: flex;
@@ -157,35 +204,53 @@
   min-height: calc(100% - 3.06rem);
 }
 
-.lead__title {
+/*На 1024 х 600 Nest Hub НЕ РАБОТАЕТ как надо*/
+/*.lead__title {
   margin: 0 auto;
   padding: 0;
   max-width: 93.8vh; /*720 от 928 77,59%;
   for 1280 min-width: 70.4vh OR max-width: 60.8%;
   */ /*Марджины блоков в lead__container*/
+  /*word-break: break-word; /*Важно чтобы добавлять новый текст
+  легко перемещался на новые строки*/
+  /*font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 1.05; /*1.04 actually*/
+  /*letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}*/
+
+/*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
+.lead__title {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 113vh; /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
   word-break: break-word; /*Важно чтобы добавлять новый текст
   легко перемещался на новые строки*/
   font-style: normal;
   font-weight: 900;
   font-size: 6rem;
-  line-height: 1.05; /*1.04 actually*/
-  letter-spacing: 0em;
+  line-height: 1.04;
+  letter-spacing: 0;
   text-align: center;
   color: #FFFFFF;
 }
 
+
 .lead__subtitle {
-  /*margin: 32px auto 56px auto; /*Иначе моём миксе у figure и img margin 56 появляется*/
+  /*margin: 32px auto 56px auto; Иначе моём миксе у figure и img margin 56 появляется*/
   margin: 2rem auto 0;
   padding: 0;
-  max-width: 68.97%; /*640 от 928 68.97%*/
+  max-width: 106.7vh; /*Работает на 1024х600*//*640 от 928 68.97%; 68.97%;*/
   word-break: break-word;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 1.89rem;
   line-height: 1.2; /*Внимательно! Нужно интерлиньяж считать от font-size, не rem*/
 /* or 120% */
-  letter-spacing: 0.003em;
+  letter-spacing: 0;
   text-align: center;
   color: #FFFFFF;
 }
@@ -263,7 +328,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.6rem; /*Was 163% sometimes 1.65rem*/
+  line-height: 1.625rem; /*Was 163% sometimes 1.65rem*/
   /* or 26px */
   letter-spacing: 0;
 }
@@ -277,10 +342,10 @@
 .intro__list-item {
   font-style: normal;
   font-weight: 700;
-  font-size: 0.7rem;
-  line-height: 1.57;
+  font-size: 0.75rem;
+  line-height: 1.5em;
   /* or 150% */
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
 }
 
 .span-accent {
@@ -288,9 +353,12 @@
   letter-spacing: 0;
 }
 
+/*Для 1024*/
 .photo-grid {
   margin: 5.75rem 0 0; /*Was margin: 48px auto 0;*/
-  padding: 0;
+ padding: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .photo-grid__items {
@@ -299,29 +367,139 @@
   padding: 0;
   max-width: calc(100% - 4.75rem);
   min-height: calc(100% - 5.75rem);
-  grid-template-columns: repeat(3, minmax(225px, max-content)); /*225px*/
+  grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
+  /*Хорошо встал разброс от 24 до 32% взяла ср ариф repeat(auto-fit, minmax(28%, 1fr))*/
   grid-template-rows: repeat(4, minmax(min-content, 1fr));
-  gap: 14px; /*14px*/
-}
-/*Для 1024*/
-.photo-grid__item {
-  min-width: 300px; /*300px*/
-  max-height: 225px; /*225px*/
+  gap: 14px;
 }
 
-/*.photo-grid__items {
+.photo-grid__item {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Для 1280*/
+/*.photo-grid {
+  margin: 5.75rem 0 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-grid__items {
   display: grid;
-  margin: 0 3.8% 0 3.8%;
+  margin: 0 3.75% 0 3.75%;
   padding: 0;
   max-width: calc(100% - 4.75rem);
   min-height: calc(100% - 5.75rem);
-  grid-template-columns: repeat(4, minmax(213px, max-content)); /*213px*/
-  /*grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
-  gap: 16px; 16px
-}*/
-/*Для 1280 и
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  /*Хорошо встал разброс от 19 до 23% взяла ср ариф repeat(auto-fit, minmax(21%, 1fr))*/
+  /* Спорно и без него норм работаем grid-template-rows: repeat(3, minmax(min-content, 1fr));*/
+  /*gap: 16px;
+}
+
 .photo-grid__item {
-  max-width: 284px;
-  max-height: 213px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }*/
 
+/* Больше 1280*/
+/*.photo-grid {
+  margin: 6rem 0 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-grid__items {
+  display: grid;
+  margin: 0 3.75% 0 3.75%;
+  padding: 0;
+  max-width: calc(100% - 4.75rem);
+  min-height: calc(100% - 6rem);
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
+  /*Хорошо на 2560 встал разброс от 20 до 24% взяла ср ариф repeat(auto-fit, minmax(22%, 1fr))*/
+  /*Не надо grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));*/
+  /*gap: 18px;
+}
+
+.photo-grid__item {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}*/
+
+/*Для 768*/
+/*.photo-grid {
+  margin: 5.5rem 0 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-grid__items {
+  display: grid;
+  margin: 0 3.15% 0 3.15%;
+  padding: 0;
+  max-width: calc(100% - 3rem);
+  min-height: calc(100% - 5.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  /*Хорошо на 2560 встал разброс от 32 до 48% взяла ср ариф repeat(auto-fit, minmax(40%, 1fr))*/
+  /*grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  gap: 16px;
+}
+
+.photo-grid__item {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+*/
+
+/*Для 320*/
+/*.photo-grid {
+  margin: 4rem 0 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-grid__items {
+  display: grid;
+  margin: 0 5% 0 5%;
+  padding: 0;
+  max-width: calc(100% - 2rem);
+  min-height: calc(100% - 4rem);
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  /*Хорошо на 2560 встал разброс от 49 до 100% взяла ср ариф repeat(auto-fit, minmax(74.5%, 1fr))*/
+  /*grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  gap: 12px;
+}
+
+.photo-grid__item {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}*/
