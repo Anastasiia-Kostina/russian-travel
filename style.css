@@ -20,9 +20,9 @@
   justify-content: center;
   width: 100%;
   padding: 0;
+}
   /*align-content: flex-end;*/
   /*width: 100%; И так без margin от page*/
-}
 
 /*.border {
   border: 1px solid red;
@@ -84,14 +84,15 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   position: relative;
   top: 0;
   left: 0;
-  align-items: flex-end;
-  max-height: calc(100vh - 3.25rem);
+  box-sizing: border-box;
+  min-height: calc(10vh - 1.75rem);
   margin: 1.75rem auto 0 auto;
   padding: 0;
-  width: calc(100% - 6rem);
+  min-width: calc(100% - 6rem);
 }
 
 /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
@@ -138,7 +139,6 @@
   font-weight: 400;
   line-height: 2rem; /*Вписывается с line-height: 2rem, но по макету 1.75rem;
   Чекнула в Perf Pix */
-  letter-spacing: 0em;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -147,6 +147,7 @@
   position: relative;
   top: 0;
   left: 0;
+  width: fit-content;
 }
 
 .menu__lang-link:hover,
@@ -160,7 +161,7 @@
   content: "";
   display: block;
   position: relative;
-  top: -3px; /*Чтобы Ru En встали на место в Perf Pix*/
+  top: 0; /*Чтобы Ru En встали на место в Perf Pix*/
   left: 0;
   width: 100%;
   height: 2px;
@@ -202,7 +203,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  width: calc(100% - 6rem); /*Works calc(100% - 96px)*/
+  max-width: calc(100% - 6rem); /*Works calc(100% - 96px)*/
   min-height: calc(100% - 3.06rem);
 }
 
@@ -252,7 +253,6 @@
   font-size: 1.87rem;
   line-height: 1.2; /*Внимательно! Нужно интерлиньяж считать от font-size, не rem*/
 /* or 120% */
-  letter-spacing: 0;
   text-align: center;
   color: #FFFFFF;
 }
@@ -273,7 +273,7 @@
   margin-top: 0.5rem; /*margin-top: 8px;*/
   padding: 0;
   min-width: 9.87rem; /*min-width: 158px;*/
-  max-width: 17.4%; /*Должно быть 17,1, но Perf Pix*/
+  max-width: 17.1%; /*Должно быть 17,1, но Perf Pix*/
   font-style: normal;
   font-weight: 400;
   font-size: 0.62rem;
@@ -309,11 +309,6 @@
 }
 
 .intro__title {
-  margin: 0;
-  padding: 0;
-  width: 100%; /*720 от 928 77,59%*/ /*Марджины блоков в lead__container*/
-  word-break: break-word; /*Важно чтобы добавлять новый текст
-  легко перемещался на новые строки*/
   font-style: normal;
   font-weight: 900;
   font-size: 3.39rem; /*Was 3.39rem;*/
@@ -322,6 +317,11 @@
   letter-spacing: 0; /*Was 0.01em;*/
   text-align: left;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  width: 100%; /*720 от 928 77,59%*/
+  word-break: break-word; /*Важно чтобы добавлять новый текст
+  легко перемещался на новые строки*/
 }
 
 .intro__text {
@@ -332,7 +332,6 @@
   font-size: 1rem;
   line-height: 1.625; /*Was 163% sometimes 1.65rem*/
   /* or 26px */
-  letter-spacing: 0;
 }
 
 .intro__list {
@@ -347,7 +346,6 @@
   font-size: 0.75rem;
   line-height: 1.5em;
   /* or 150% */
-  letter-spacing: 0;
 }
 
 .span-accent {
@@ -365,7 +363,7 @@
 
 .photo-grid__items {
   display: grid;
-  margin: 0 4.7% 0 4.7%;
+  margin: 0 4.7%;
   padding: 0;
   box-sizing: border-box;
   max-width: calc(100% - 4.75rem);
@@ -373,7 +371,7 @@
   grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
   /*Хорошо встал разброс от 24 до 32% взяла ср ариф repeat(auto-fit, minmax(28%, 1fr))*/
   grid-template-rows: repeat(4, minmax(min-content, 1fr));
-  gap: 14px;
+  gap: 0.87rem;
 }
 
 .photo-grid__item {
@@ -520,7 +518,7 @@
   align-content: space-between;
   justify-items: start;
   align-items: end;
-  gap: 80px;
+  gap: 5rem;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -560,7 +558,6 @@
   font-weight: 900;
   font-size: 4.5rem; /*72px*/
   line-height: 1.05;
-  letter-spacing: 0;
   text-align: left;
   color: #FFFFFF;
   /*margin: 0 0 1.31rem 0;*/
@@ -602,7 +599,7 @@
   letter-spacing: 0; /*2px*/
   text-decoration-line: underline;
   color: #FFFFFF;
-  margin: 12px 0 0 0;
+  margin: 0.75rem 0 0 0;
   padding: 0;
   width: 100%;
 }
@@ -739,7 +736,6 @@
 .footer {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin: 5.75rem auto 1.5rem auto;
   padding: 0;
 }
@@ -772,7 +768,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.12;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   color: #FFFFFF;
   text-decoration: none;
 }
