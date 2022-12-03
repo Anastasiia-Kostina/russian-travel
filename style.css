@@ -328,7 +328,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.625rem; /*Was 163% sometimes 1.65rem*/
+  line-height: 1.625; /*Was 163% sometimes 1.65rem*/
   /* or 26px */
   letter-spacing: 0;
 }
@@ -356,7 +356,7 @@
 /*Для 1024*/
 .photo-grid {
   margin: 5.75rem 0 0; /*Was margin: 48px auto 0;*/
- padding: 0;
+  padding: 0;
   object-fit: cover;
   object-position: center;
 }
@@ -365,6 +365,7 @@
   display: grid;
   margin: 0 4.7% 0 4.7%;
   padding: 0;
+  box-sizing: border-box;
   max-width: calc(100% - 4.75rem);
   min-height: calc(100% - 5.75rem);
   grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
@@ -503,3 +504,153 @@
   object-fit: cover;
   object-position: center;
 }*/
+
+.places {
+  margin: 5.75rem auto 0;
+  padding: 0;
+}
+
+.places__container {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 1fr);
+  justify-content: start;
+  align-content: space-between;
+  justify-items: start;
+  align-items: end;
+  gap: 80px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: calc(100% - 6rem);
+  min-height: calc(100% - 5.75rem);
+  object-fit: cover;
+  object-position: center;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 47.35% minmax(min-content, 1fr);
+  /*Важно 47.45% т.к. 47.4%*/
+  grid-template-rows: minmax(min-content, 1fr);
+  grid-template-areas:
+    "title website"
+    "image paragraph-first"
+    "image paragraph-second";
+  column-gap: 2rem; /*Change in other sizes*/
+  /*row-gap: 27px;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%; /*От places же*/
+  min-height: calc(100% - 5rem); /*80px gap*/
+  /*max-height: fit-content;*/
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.place__title {
+  grid-area: title;
+  align-self: center;
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.5rem; /*72px*/
+  line-height: 1.05;
+  letter-spacing: 0;
+  text-align: left;
+  color: #FFFFFF;
+  /*margin: 0 0 1.31rem 0;*/
+  margin: 0 0 3.04rem 0;
+  padding: 0;
+}
+
+.place__website {
+  grid-area: website;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  align-self: end;
+  /*margin: 0 0 1.31rem 0;*/
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.place__website-url-heading {
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem; /*12px*/
+  line-height: 1; /*Помнить, что от font-size считается*/
+  letter-spacing: 0.125em; /*2px*/
+  color: #AAAAAA;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.place__website-link {
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem; /*18px*/
+  line-height: 1.2; /*Помнить, что от font-size считается*/
+  letter-spacing: 0; /*2px*/
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin: 12px 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.place__image {
+  grid-area: image;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.places__paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.place__paragraph_first {
+  grid-area: paragraph-first;
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.625;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+.place__paragraph_second {
+  grid-area: paragraph-second;
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.625;
+  letter-spacing: 0.001em;
+  color: #FFFFFF;
+  text-align: start;
+  margin: 1.68rem 0 0 0; /* margin: -8px 0 0 0;*/
+  padding: 0;
+}
+
+.place__paragraph_second:nth-of-type(2n) {
+  margin: 1.62rem 0 0 0;
+}
