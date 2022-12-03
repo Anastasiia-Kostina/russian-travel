@@ -96,15 +96,16 @@
 
 /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
 .logo {
-  display: flex;
-  flex: 0 1 auto;
+  display: inline-block; /*Changed fron flex*/
+  /*flex: 0 1 auto;*/
   background: url(./images/header-logo.svg);
-  background-size: cover; /*Меняла по ср со старым*/
-  background-position: center;
+  background-size: 29vh; /*Меняла по ср со старым; changed from cover*/
+  /*Только с 29 не обрезается на больших, но на 768 придётся менять размер*/
+  background-position: center center;
   background-repeat: no-repeat;
-  width: 19%; /*1024x600 19%; 1280x800 22vh;*/
-  height: 8.68vh; /*Важно, без - не влезал лого;
-  Для 1280 x 800 Nest Hub Max РАБОТАЕТ 6.2vh;*/
+  width: 17.2vw; /*1024x600 19%; 1280x800 22vh; changed from 19%*/
+  height: 8.7vh; /*Важно, без - не влезал лого;
+  Для 1280 x 800 Nest Hub Max РАБОТАЕТ 6.2vh; Changed from 8.68vh*/
   object-fit: contain;
   object-position: center;
 }
@@ -653,4 +654,83 @@
 
 .place__paragraph_second:nth-of-type(2n) {
   margin: 1.62rem 0 0 0;
+}
+
+.cover {
+  margin: 5.75rem auto 0; /*Was margin: 48px auto 0;*/
+  padding: 0;
+}
+
+.cover__container {
+  background-image: url(./images/1024_cover-trains.jpg); /*Be sure to change at every
+  breakpoint for every size*/
+  /*background-size: 100vw; /*Change for bigger screens*/
+  background-position: center center;
+  background-size: cover;
+  word-break: break-word;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; /*Change for bigger sizes width: calc(100% - 6rem)*/
+  min-height: 106.7vh; /*Change for bigger sizes add     width: calc(100% - 6rem);
+  min-height: 92.5vh;*/
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+}
+
+.cover__overlay {
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(42, 44, 47, .3);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.cover__link {
+  display: block;
+  text-decoration: none;
+  padding: 12.3rem 14.6rem; /*~195px 232px*/ /*Нужно будет изменять паддинги для
+  разных размеров*/
+  box-sizing: border-box;
+}
+
+.cover__link:hover {
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 44, 47, 0.8);
+  transition: opacity .2s linear;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.cover__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.5rem; /*72px*/
+  line-height: 1.05; /*76px*/
+  letter-spacing: 0;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto;
+  width: 100%;
+  /*margin: 12.18rem auto 0;
+  width: calc(100% - 45.3vw);*/ /*195px*/ /*Gonna need to change with diff sizes*/
+  padding: 0;
+}
+
+.cover__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.22;
+  /* or 122% */
+  text-align: center;
+  color: #FFFFFF;
+  margin: 2rem auto 0;
+  width: calc(100% - 19.2vw);
+  /*margin: 2rem auto 12.18rem;
+  width: calc(100% - 65vw);*/ /*195px*/ /*Gonna need to change with diff sizes*/
+  padding: 0;
 }
