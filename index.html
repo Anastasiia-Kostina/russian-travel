@@ -30,9 +30,11 @@
     <div class="header__container border">
       <div class="logo border"></div>
       <nav class="menu border">
-        <a class="menu__lang-link menu__lang-link_ru active border" lang="ru" href="#">Ru</a>
+        <a class="menu__lang-link menu__lang-link_ru active border link-transition" lang="ru" href="#">Ru</a>
+        <!--Подумала, что модификатор гипотетически пригодится далее при переключении
+        на версии страницы на других языках-->
         <!--Активная ссылка и подчёркивание для неё-->
-        <a class="menu__lang-link menu__lang-link_en border" lang="en" href="#">En</a>
+        <a class="menu__lang-link menu__lang-link_en border link-transition" lang="en" href="#">En</a>
       </nav>
     </div>
   </header>
@@ -56,7 +58,7 @@
             <img src="./images/1024_lead-polka.jpg" alt="Фото человека в плацкартном вагоне"
             class="lead__image border_gr">
           </picture>
-          <figcaption class="lead__image lead__image_figure_caption border">ваша полка — верхняя</figcaption>
+          <figcaption class="lead__image lead__image_figure_caption border">ваша&nbsp;полка&nbsp;&mdash;&nbsp;верхняя</figcaption>
         </figure> <!--!Тег picture не забудь параллельно!-->
       </div>
     </section>
@@ -186,7 +188,7 @@
           srcset="./images/768_photo-grid-kondratiev.jpg">
           <source media="(max-width: 425px)"
           srcset="./images/320_photo-grid-kondratiev.jpg">
-          <img src="./images/1024_photo-grid-kondratiev.jpg" alt="Фото знак перехода"
+          <img src="./images/1024_photo-grid-kondratiev.jpg" alt="Фото знак пешеходного перехода"
           class="photo-grid__item">
         </picture>
         <picture class="photo-grid__item border">
@@ -270,7 +272,7 @@
             <p class="place__paragraph place__paragraph_second">На&nbsp;этом Калининградская область&nbsp;не заканчивается. Для путешественника
               и&nbsp;исследователя там&nbsp;же по&nbsp;соседству&nbsp;&mdash; самая западная точка России, Балтийская коса, &mdash;
               и&nbsp;немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в&nbsp;спокойствие природы
-              и&nbsp;запах стального, прохладного моря.
+              и&nbsp;запах&nbsp;стального,&nbsp;прохладного моря.
             </p>
           </div>
         </article>
@@ -409,12 +411,12 @@
       </div> <!--//section places-->
     </section>
     <section class="cover">
-      <div class="cover__container">
+      <div class="cover__container cover__background">
         <div class="cover__overlay">
           <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank"
-        class="cover__link border">
-            <h2 class="cover__title">До Байкала «на собаках»</h2>
-            <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.
+        class="cover__link link-transition border">
+            <h2 class="cover__title">До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;</h2>
+            <p class="cover__subtitle">По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие от&nbsp;столицы&nbsp;до&nbsp;Байкала на&nbsp;электричках.
             </p>
           </a>
         </div>
@@ -433,7 +435,6 @@
             class="footer__link link-transition">Календарь</a>
           <a href="https://travel.yandex.ru" target="_blank"
             class="footer__link link-transition">Путешествия</a>
-          </ul>
         </nav>
         <p class="footer__copyright">&copy;&nbsp;2022. Анастасия Костина</p>
       </div>
