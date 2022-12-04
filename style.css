@@ -92,7 +92,8 @@
   min-height: calc(10vh - 1.75rem);
   margin: 1.75rem auto 0 auto;
   padding: 0;
-  min-width: calc(100% - 6rem);
+  max-width: calc(100% - 6rem);
+
 }
 
 /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
@@ -100,12 +101,12 @@
   display: inline-block; /*Changed fron flex*/
   /*flex: 0 1 auto;*/
   background: url(./images/header-logo.svg);
-  background-size: 29vh; /*Меняла по ср со старым; changed from cover*/
+  background-size: cover; /*Меняла по ср со старым; changed from cover*/
   /*Только с 29 не обрезается на больших, но на 768 придётся менять размер*/
   background-position: center center;
   background-repeat: no-repeat;
-  width: 17.2vw; /*1024x600 19%; 1280x800 22vh; changed from 19%*/
-  height: 8.7vh; /*Важно, без - не влезал лого;
+  max-width: 11rem; /*1024x600 19%; 1280x800 22vh; changed from 19%*/
+  min-height: 3.25rem; /*Важно, без - не влезал лого;
   Для 1280 x 800 Nest Hub Max РАБОТАЕТ 6.2vh; Changed from 8.68vh*/
   object-fit: contain;
   object-position: center;
@@ -820,13 +821,13 @@
     min-height: calc(1vh - 1.75rem);
     margin: 1.75rem auto 0 auto;
     padding: 0;
-    min-width: calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
   }
 
   .logo {
-    background-size: 17vh;
-    width: 23vw;
-    height: 5.1vh;
+    background-size: 11rem;
+    width: 100%;
+    min-height: 3.25rem;
   }
 
 /*lead 768x1024*/
@@ -976,7 +977,7 @@
 }
 
 
-/*----------------------------max 425------------*/
+/*----------------------------max 320------------*/
 
 @media (max-width: 320px) {
   /*header 320x256*/
@@ -985,13 +986,13 @@
     min-height: calc(1vh - 1rem);
     margin: 1rem auto 0 auto;
     padding: 0;
-    min-width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
   }
 
   .logo {
-    background-size: 56vh;
-    width: 44.6vw;
-    height: 15.8vh;
+    background-size: 8.87rem;
+    width: 100%;
+    min-height: 3.45rem;
   }
 
   .menu__lang-link {
@@ -1014,7 +1015,8 @@
   .lead__title {
     font-size: 2.5rem;
     line-height: 1.1;
-    max-width: calc(100% - 2rem);
+    max-width: calc(100% - 3rem);
+    min-width: 18rem;
   }
 
   .lead__subtitle {
@@ -1220,4 +1222,236 @@
   line-height: 1;
   margin: 3rem 0 0 0;
 }
+}
+
+/*----------------------------max 425------------*/
+
+@media (max-width: 425px) {
+  /*header 425x340*/
+
+  .header__container {
+    margin: 1rem auto 0 auto;
+    max-width: calc(100% - 1.5rem);
+  }
+
+  .logo {
+    background-size: 8.87rem;
+    width: 100%;
+    min-height: 3.45rem;
+  }
+
+  .menu__lang-link {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  .lead {
+    margin: 2.5rem auto 0;
+    padding: 0;
+  }
+
+  /*lead 425x340*/
+  .lead__container {
+    max-width: 100%;
+    min-height: calc(100% - 3rem);
+  }
+
+  .lead__title {
+    font-size: 3rem;
+    max-width: calc(100% - 3rem);
+    min-width: 18rem;
+  }
+
+  .lead__subtitle {
+    font-size: 1.25rem;
+    line-height: 1.27;
+  }
+
+  .lead__image_figure_container {
+    margin-top: 2rem;
+  }
+
+  .lead__image_figure_caption {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+
+/*intro 425x340*/
+  .intro {
+    margin: 3rem auto 0;
+  }
+
+  .intro__container {
+    margin: 0 5.7% 0 5.7%;
+    max-width: calc(100% - 3rem);
+  }
+
+  .intro__title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .intro__text {
+    margin: 1.5rem 0 0 0;
+  }
+
+/*photo-grid 425x340*/
+  .photo-grid {
+    margin: 3rem 0 0;
+  }
+
+  .photo-grid__items {
+    margin: 0 1.5rem;
+    max-width: calc(100% - 1.5rem);
+    min-height: calc(100% - 3rem);
+    grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+    gap: 0.75rem;
+  }
+
+  /*places 425x340*/
+  .places {
+    margin: 3rem auto 0;
+  }
+
+  .places__container {
+    gap: 3.125rem;
+    max-width: 100%;
+    min-height: calc(100% -  4rem);
+  }
+
+  .place {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, minmax(min-content, 100%));
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "image"
+      "paragraph-first"
+      "paragraph-second";
+    /*row-gap: 2rem;*/ /*Удобно, не не убирался последний gap*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: calc(100% - 3.125rem);
+  }
+
+  .place__title {
+    font-size: 2rem;
+    line-height: 1.09;
+    margin: 0 1.5rem;
+  }
+
+  .place__website {
+    margin: 2.3rem 1.5rem 1.5rem;
+  }
+
+  .places__paragraphs {
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    min-height: calc(100% - 1.56rem);
+    margin: 2rem 1.5rem 0;
+  }
+
+  .place__paragraph_first {
+    font-size: 1rem;
+    line-height: 1.63;
+  }
+
+  .place__paragraph_second {
+    font-size: 1rem;
+    line-height: 1.63;
+    margin: 1rem 0 0 0;
+  }
+
+  .place__paragraph_second:nth-of-type(2n) {
+    margin: 1rem 0 0 0;
+  }
+
+/*cover 425x340*/
+
+.cover {
+  margin: 4.127rem 0 0;
+}
+
+.cover__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.cover__background {
+  background-image: url(./images/320_cover-trains.jpg);
+  min-height: 84vh;
+}
+
+.cover__overlay {
+  min-height: 100%;
+}
+
+.cover__link {
+  padding: 4.9rem 1rem;
+}
+
+.cover__title {
+  font-size: 2rem;
+  line-height: 1.09;
+}
+
+.cover__subtitle {
+  font-size: 0.87rem;
+  line-height: 1.14;
+  margin: 1rem auto 0;
+  max-width: calc(100% - 21vw);
+}
+
+/*footer 320x256*/
+
+.footer {
+  margin: 3rem auto 1.49rem auto;
+}
+
+.footer__container {
+  flex-direction: column;
+  justify-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  min-height: calc(100% - 3rem);
+}
+
+.footer__links {
+  flex-direction: column;
+  justify-items: flex-start;
+  align-content: flex-start;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  margin-right: 0;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.footer__link:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.footer__copyright {
+  font-size: 0.87rem;
+  line-height: 1;
+  margin: 2rem 0 0 0;
+}
+}
+
+/*----------------------1280------------------------*/
+/*header 768x1024*/
+@media (max-width: 1280px) {
+
 }
