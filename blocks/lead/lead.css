@@ -2,3 +2,10 @@
   margin: 3rem auto 0;
   padding: 0;
 }
+
+@media (max-width: 425px) {
+.lead {
+  margin: 2.5rem auto 0;
+  padding: 0;
+}
+}

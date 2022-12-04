@@ -4,3 +4,21 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 320px) {
+.photo-grid {
+  margin: 4rem 0 0;
+}
+}
+
+@media (max-width: 425px) {
+.photo-grid {
+  margin: 3rem 0 0;
+}
+}
+
+@media (max-width: 768px) {
+.photo-grid {
+  margin: 5.5rem 0 0;
+}
+}

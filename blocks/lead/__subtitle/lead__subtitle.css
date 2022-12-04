@@ -10,3 +10,32 @@
   text-align: center;
   color: #FFFFFF;
 }
+
+@media (max-width: 320px) {
+.lead__subtitle {
+  margin: 1rem auto 0;
+  font-size: 1rem;
+  line-height: 1.25;
+  min-height: calc(100% - 1rem);
+  width: calc(100% - 2rem);
+}
+}
+
+@media (max-width: 425px) {
+.lead__subtitle {
+  font-size: 1.25rem;
+  line-height: 1.27;
+}
+}
+
+@media (max-width: 768px) {
+  .lead__subtitle {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1280px) {
+.lead__subtitle {
+  width: calc(100% - 35%);
+}
+}

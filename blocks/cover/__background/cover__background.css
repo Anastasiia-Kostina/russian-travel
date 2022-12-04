@@ -10,3 +10,35 @@
   object-position: center;
   z-index: 0;
 }
+
+@media (max-width: 320px) {
+.cover__background {
+  background-image: url(./images/320_cover-trains.jpg);
+  width: 100vw;
+  height: 12.5rem;
+}
+}
+
+@media (max-width: 425px) {
+.cover__background {
+  background-image: url(./images/320_cover-trains.jpg);
+  width: 100vw;
+  height: 12.5rem;
+}
+}
+
+@media (max-width: 768px) {
+  .cover__background {
+    background-image: url(./images/768_cover-trains.jpg);
+    width: 100vw;
+    min-height: 30rem;
+  }
+}
+
+@media (min-width: 1280px) {
+.cover__background {
+  background-image: url(./images/1280_cover-trains.jpg);
+  width: 100vw;
+  height: 46.25rem;
+}
+}

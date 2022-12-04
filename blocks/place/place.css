@@ -15,3 +15,60 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 320px) {
+.place {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, minmax(min-content, 100%));
+  grid-template-areas:
+    "title"
+    "website"
+    "image"
+    "image"
+    "paragraph-first"
+    "paragraph-second";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: calc(100% - 3.125rem);
+}
+}
+
+@media (max-width: 425px) {
+.place {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, minmax(min-content, 100%));
+  grid-template-areas:
+    "title"
+    "website"
+    "image"
+    "image"
+    "paragraph-first"
+    "paragraph-second";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: calc(100% - 3.125rem);
+}
+}
+
+
+@media (max-width: 768px) {
+.place {
+  grid-template-columns: 47.25% minmax(min-content, 1fr);
+  column-gap: 1.75rem;
+  min-height: calc(100% - 4.56rem);
+}
+}
+
+@media (min-width: 1280px) {
+.place {
+  grid-template-columns: 46.8% minmax(min-content, 1fr);
+  column-gap: 2.5rem;
+  min-height: calc(100% - 5.75rem);
+}
+}

@@ -10,3 +10,27 @@
   height: 100%;
   background: rgba(42, 44, 47, 0.8);
 }
+
+@media (max-width: 320px) {
+.cover__link {
+  padding: 1.7rem 1rem;
+}
+}
+
+@media (max-width: 425px) {
+.cover__link {
+  padding: 2.08rem 1rem;
+}
+}
+
+@media (max-width: 768px) {
+.cover__link {
+  padding: 7.3rem 7.2rem;
+}
+}
+
+@media (min-width: 1280px) {
+.cover__link {
+  padding: 15.4rem 8rem;
+}
+}

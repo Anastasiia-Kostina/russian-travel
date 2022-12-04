@@ -8,3 +8,29 @@
   margin: 0 0 2.9rem 0;
   padding: 0;
 }
+
+@media (max-width: 320px) {
+.place__website {
+  margin: 2rem 1rem 2rem;
+}
+}
+
+@media (max-width: 425px) {
+.place__website {
+  margin: 2.3rem 1.5rem 1.5rem;
+}
+}
+
+@media (max-width: 768px) {
+.place__website {
+  margin: 0;
+  margin: 0 0 3rem 0;
+}
+}
+
+@media (min-width: 1280px) {
+.place__website {
+  margin: 0;
+  margin: 0 0 3rem 0;
+}
+}

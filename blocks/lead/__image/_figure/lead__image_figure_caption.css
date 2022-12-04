@@ -11,3 +11,30 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+@media (max-width: 320px) {
+.lead__image_figure_caption {
+  margin: 0.5rem 0 0 1rem;
+  font-size: 0.62rem;
+  line-height: 1.4;
+}
+}
+
+@media (max-width: 425px) {
+.lead__image_figure_caption {
+  font-size: 0.6rem;
+  line-height: 1.2;
+}
+}
+
+@media (max-width: 768px) {
+  .lead__image_figure_caption {
+    margin: 0.5rem 0 0 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+.lead__image_figure_caption {
+  margin: 0.5rem 0 0 1.5rem;
+}
+}

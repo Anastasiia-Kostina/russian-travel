@@ -12,3 +12,31 @@
   padding: 0;
   max-width: 100%;
 }
+
+@media (max-width: 320px) {
+.place__paragraph_first {
+  font-size: 1rem;
+  line-height: 1.63;
+}
+}
+
+@media (max-width: 425px) {
+.place__paragraph_first {
+  font-size: 1rem;
+  line-height: 1.63;
+}
+}
+
+@media (max-width: 768px) {
+.place__paragraph_first {
+  font-size: 1rem;
+  line-height: 1.61;
+}
+}
+
+@media (min-width: 1280px) {
+.place__paragraph_first {
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+}

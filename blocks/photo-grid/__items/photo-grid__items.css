@@ -9,3 +9,44 @@
   grid-template-rows: repeat(4, minmax(min-content, 1fr));
   gap: 0.87rem;
 }
+
+@media (max-width: 320px) {
+.photo-grid__items {
+  margin: 0 1rem;
+  max-width: calc(100% - 1.5rem);
+  min-height: calc(100% - 4rem);
+  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  gap: 0.75rem;
+}
+}
+
+@media (max-width: 425px) {
+.photo-grid__items {
+  margin: 0 1.5rem;
+  max-width: calc(100% - 1.5rem);
+  min-height: calc(100% - 3rem);
+  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  gap: 0.75rem;
+}
+}
+
+@media (max-width: 768px) {
+  .photo-grid__items {
+    margin: 0 3.15%;
+    max-width: calc(100% - 3rem);
+    min-height: calc(100% - 5.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+.photo-grid__items {
+  margin: 0 3.8%;
+  max-width: calc(100% - 6rem);
+  grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+  /*Хорошо встал разброс от 24 до 32% взяла ср ариф repeat(auto-fit, minmax(28%, 1fr))*/
+  grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  gap: 0.87rem;
+}
+}

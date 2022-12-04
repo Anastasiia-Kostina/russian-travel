@@ -3,3 +3,23 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+@media (max-width: 320px) {
+.place__paragraphs {
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  min-height: calc(100% - 1.56rem);
+  margin: 2rem 1rem 0;
+}
+}
+
+@media (max-width: 425px) {
+.place__paragraphs {
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  min-height: calc(100% - 1.56rem);
+  margin: 2rem 1.5rem 0;
+}
+}

@@ -9,3 +9,41 @@
   padding: 0;
   z-index: 0;
 }
+
+@media (max-width: 320px) {
+.cover__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+}
+
+@media (max-width: 425px) {
+.cover__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+}
+
+@media (max-width: 768px) {
+.cover__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+}
+
+@media (min-width: 1280px) {
+.cover__container {
+  margin: 0 3.7% 0 3.7%;
+  max-width: calc(100% - 6rem);
+  min-height: calc(100% - 5.75rem);
+}
+}

@@ -8,3 +8,21 @@
   width: 100%;
   z-index: 0;
 }
+
+@media (max-width: 320px) {
+.cover__overlay {
+  min-height: 100%;
+}
+}
+
+@media (max-width: 425px) {
+.cover__overlay {
+  min-height: 100%;
+}
+}
+
+@media (max-width: 768px) {
+.cover__overlay {
+  min-height: 100%;
+}
+}

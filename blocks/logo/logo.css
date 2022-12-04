@@ -9,3 +9,27 @@
   object-fit: contain;
   object-position: center;
 }
+
+@media (max-width: 768px) {
+  .logo {
+    background-size: contain;
+    width: 11rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    background-size: contain;
+    width: 8.87rem;
+  }
+}
+
+@media (max-width: 425px) {
+.logo {
+  background-size: contain;
+  /*background-size: 58vh;
+  width: 47vw;
+  height: 17.1vh;*/
+  width: 8.87rem;
+}
+}

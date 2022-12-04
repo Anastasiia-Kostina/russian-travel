@@ -12,3 +12,35 @@
   margin: 0 0 3.04rem 0;
   padding: 0;
 }
+
+@media (max-width: 320px) {
+.place__title {
+  font-size: 2rem;
+  line-height: 1.09;
+  margin: 0 1rem;
+}
+}
+
+@media (max-width: 425px) {
+.place__title {
+  font-size: 2rem;
+  line-height: 1.09;
+  margin: 0 1.5rem;
+}
+}
+
+@media (max-width: 768px) {
+  .place__title {
+    font-size: 2.71rem;
+    line-height: 1.07;
+    margin: 0 0 3rem 0;
+  }
+}
+
+@media (min-width: 1280px) {
+.place__title {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin: 0 0 3rem 0;
+}
+}

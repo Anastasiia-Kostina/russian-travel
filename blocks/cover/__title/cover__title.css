@@ -10,3 +10,24 @@
   max-width: 100%;
   padding: 0;
 }
+
+@media (max-width: 320px) {
+.cover__title {
+  font-size: 2rem;
+  line-height: 1.09;
+}
+}
+
+@media (max-width: 425px) {
+.cover__title {
+  font-size: 2rem;
+  line-height: 1.09;
+}
+}
+
+@media (min-width: 1280px) {
+.cover__title {
+  font-size: 4.5rem;
+  line-height: 1.05;
+}
+}
