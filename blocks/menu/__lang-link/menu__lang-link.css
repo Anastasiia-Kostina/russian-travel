@@ -1,0 +1,48 @@
+.menu__lang-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.17;
+  color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+  top: -1px;
+  left: 0;
+  margin-right: 1.2rem;
+}
+
+.menu__lang-link.active {
+  position: relative;
+  top: -2px;
+  left: 0;
+  width: fit-content;
+}
+
+.menu__lang-link.active::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+.menu__lang-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: width 0.4s ease-in-out;
+}
+
+.menu__lang-link:hover:after {
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu__lang-link:last-of-type {
+  display: block;
+  margin-right: 0;
+}

@@ -1,0 +1,11 @@
+.logo {
+  display: inline-block;
+  background: url(./images/header-logo.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 17.2vw;
+  height: 8.7vh;
+  object-fit: contain;
+  object-position: center;
+}

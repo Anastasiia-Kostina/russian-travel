@@ -1,0 +1,13 @@
+.lead__image_figure_caption {
+  margin-top: 0.5rem;
+  padding: 0;
+  min-width: 9.87rem;
+  max-width: 17.1%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.62rem;
+  line-height: inherit;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

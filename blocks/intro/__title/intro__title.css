@@ -1,0 +1,13 @@
+.intro__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.39rem;
+  line-height: 1.074;
+  letter-spacing: 0;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  word-break: break-word;
+}
