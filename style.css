@@ -151,7 +151,7 @@
 
 .menu__lang-link.active {
   position: relative;
-  top: -1px;
+  top: -2px;
   left: 0;
   width: fit-content;
 }
@@ -989,9 +989,9 @@
   }
 
   .logo {
-    background-size: 48vh;
+    background-size: 56vh;
     width: 44.6vw;
-    height: 14.8vh;
+    height: 15.8vh;
   }
 
   .menu__lang-link {
@@ -1041,9 +1041,9 @@
   }
 
   .intro__container {
-    margin: 0 1% 0 1%;
-    max-width: calc(100% - 1.5rem);
-    min-height: calc(100% - 4rem);
+    margin: 0 5% 0 5%;
+    max-width: calc(100% - 2rem);
+    min-height: calc(100% - 1.5rem);
   }
 
   .intro__title {
@@ -1053,13 +1053,14 @@
   }
 
 .intro__text {
-  max-width: calc(100% - 1.5rem);
+  font-size: 1rem;
   line-height: 163%;
+  width: 100%;
 }
 
 .intro__list {
-  max-width: calc(100% - 1.5rem);
-  margin: 2.1rem 1% 0;
+  width: 100%;
+  margin: 2.1rem 0 0;
 }
 
 /*photo-grid 320x256*/
@@ -1155,7 +1156,10 @@
 
 .cover__background {
   background-image: url(./images/320_cover-trains.jpg);
-  min-height: 78.8vh;
+  min-height: 84vh;
+  /*position: relative;
+  top: -3px;
+  left: -3px;*/
 }
 
 .cover__overlay {
@@ -1185,20 +1189,11 @@
 }
 
 .footer__container {
-  min-width: calc(100% - 3rem);
-}
-
-.footer__copyright {
-  font-size: 0.87rem;
-  line-height: 1;
-}
-
-.footer__container {
   flex-direction: column;
   justify-items: flex-start;
   align-content: space-between;
   flex-wrap: wrap;
-  min-width: calc(100% - 3rem);
+  min-height: calc(100% - 4rem);
 }
 
 .footer__links {
