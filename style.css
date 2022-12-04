@@ -92,7 +92,7 @@
   min-height: calc(10vh - 1.75rem);
   margin: 1.75rem auto 0 auto;
   padding: 0;
-  max-width: calc(100% - 6rem);
+  width: calc(100% - 6rem);
 
 }
 
@@ -101,13 +101,13 @@
   display: inline-block; /*Changed fron flex*/
   /*flex: 0 1 auto;*/
   background: url(./images/header-logo.svg);
-  background-size: cover; /*Меняла по ср со старым; changed from cover*/
-  /*Только с 29 не обрезается на больших, но на 768 придётся менять размер*/
+  background-size: contain; /*Меняла по ср со старым; changed from cover*/
+ /*Только с 29 не обрезается на больших, но на 768 придётся менять размер*/
   background-position: center center;
   background-repeat: no-repeat;
-  max-width: 11rem; /*1024x600 19%; 1280x800 22vh; changed from 19%*/
-  min-height: 3.25rem; /*Важно, без - не влезал лого;
-  Для 1280 x 800 Nest Hub Max РАБОТАЕТ 6.2vh; Changed from 8.68vh*/
+  width: 17.2vw; /*1024x600 19%; 1280x800 22vh; changed from 19%*/
+  height: 8.7vh;
+  /*Для 1280 x 800 Nest Hub Max РАБОТАЕТ 6.2vh; Changed from 8.68vh*/
   object-fit: contain;
   object-position: center;
 }
@@ -209,7 +209,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  max-width: calc(100% - 6rem); /*Works calc(100% - 96px)*/
+  width: calc(100% - 6rem); /*Works calc(100% - 96px) max*/
   min-height: calc(100% - 3.06rem);
 }
 
@@ -234,8 +234,8 @@
 /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
 .lead__title {
   margin: 0 auto;
-  padding: 0;
-  max-width: 113vh; /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
+  padding: 0 6.5 0;
+  width: calc(100% - 13rem); /*На 1024 х 600 Nest Hub РАБОТАЕТ как надо*/
   word-break: break-word; /*Важно чтобы добавлять новый текст
   легко перемещался на новые строки*/
   font-style: normal;
@@ -252,7 +252,7 @@
   /*margin: 32px auto 56px auto; Иначе моём миксе у figure и img margin 56 появляется*/
   margin: 2rem auto 0;
   padding: 0;
-  max-width: 106.8vh; /*Работает на 1024х600*//*640 от 928 68.97%; 68.97%;*/
+  width: calc(100% - 18rem); /*Работает на 1024х600*//*640 от 928 68.97%; 68.97%;*/
   word-break: break-word;
   font-style: normal;
   font-weight: 400;
@@ -692,7 +692,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  min-height: 106.7vh;
+  min-height: 40rem;
   object-fit: contain;
   object-position: center;
   z-index: 0;
@@ -812,6 +812,30 @@
 
 /*----------------media-zone-----------------------*/
 
+/*----------for titles-----------------*/
+@media (max-width: 1280px) and (min-width: 320px) {
+  /* 96px - 40px */
+  .lead__title{
+  font-size: calc(2.5rem + 56 * (100vw - 320px) / 960);
+}
+}
+
+/*@media (max-width: 1280px) and (min-width: 1024px) {
+  /* 96px - 96px */
+  /*.lead__title{
+  font-size: calc(6rem + 0 * (100vw - 1024px) / 256);
+}
+}*/
+
+/*@media (max-width: 1280px) and (min-width: 768px) {
+  /* 96px - 96px */
+  /*.lead__title{
+  font-size: calc(6rem + 0 * (100vw - 768px) / 512);
+}
+}*/
+
+
+
 /*----------------------768------------------------*/
 /*header 768x1024*/
 @media (max-width: 768px) {
@@ -821,28 +845,30 @@
     min-height: calc(1vh - 1.75rem);
     margin: 1.75rem auto 0 auto;
     padding: 0;
-    max-width: calc(100% - 3rem);
+    width: calc(100% - 3rem);
   }
 
   .logo {
-    background-size: 11rem;
-    width: 100%;
-    min-height: 3.25rem;
+    background-size: contain;
+    /*width: 22.6vw;
+    height: 4.8vh;
+    background-size: 17vh;*/
+    width: 11rem;
   }
 
 /*lead 768x1024*/
 
   .lead__container {
-    max-width: 100%;
+    width: calc(100% - 3rem);
     min-height: calc(100% - 3rem);
   }
 
   .lead__title {
-    max-width: calc(100% - 3rem);
+    width: calc(100% - 1.5rem);
   }
 
   .lead__subtitle {
-    max-width: calc(100% - 8rem);
+    width: calc(100% - 8rem);
   }
 
   .lead__image_figure_caption {
@@ -945,7 +971,7 @@
   .cover__background {
     background-image: url(./images/768_cover-trains.jpg);
     width: 100vw;
-    min-height: 46.9vh;
+    min-height: 30rem;
   }
 
   .cover__overlay {
@@ -986,13 +1012,15 @@
     min-height: calc(1vh - 1rem);
     margin: 1rem auto 0 auto;
     padding: 0;
-    max-width: calc(100% - 2rem);
+    width: calc(100% - 2rem);
   }
 
   .logo {
-    background-size: 8.87rem;
-    width: 100%;
-    min-height: 3.45rem;
+    background-size: contain;
+    /*background-size: 58vh;
+    width: 47vw;
+    height: 17.1vh;*/
+    width: 8.87rem;
   }
 
   .menu__lang-link {
@@ -1008,14 +1036,14 @@
 
   /*lead 320x256*/
   .lead__container {
-    max-width: 100%;
+    width: 100%;
     min-height: calc(100% - 3rem);
   }
 
   .lead__title {
     font-size: 2.5rem;
     line-height: 1.1;
-    max-width: calc(100% - 3rem);
+    width: calc(100% - 3rem);
     min-width: 18rem;
   }
 
@@ -1024,7 +1052,7 @@
     font-size: 1rem;
     line-height: 1.25;
     min-height: calc(100% - 1rem);
-    max-width: calc(100% - 2rem);
+    width: calc(100% - 2rem);
   }
 
   .lead__image_figure_container {
@@ -1158,7 +1186,8 @@
 
 .cover__background {
   background-image: url(./images/320_cover-trains.jpg);
-  min-height: 84vh;
+  width: 100vw;
+  height: 12.5rem;
   /*position: relative;
   top: -3px;
   left: -3px;*/
@@ -1169,7 +1198,7 @@
 }
 
 .cover__link {
-  padding: 2.07rem 1rem;
+  padding: 1.7rem 1rem;
 }
 
 .cover__title {
@@ -1231,13 +1260,15 @@
 
   .header__container {
     margin: 1rem auto 0 auto;
-    max-width: calc(100% - 1.5rem);
+    width: calc(100% - 1.5rem);
   }
 
   .logo {
-    background-size: 8.87rem;
-    width: 100%;
-    min-height: 3.45rem;
+    background-size: contain;
+    /*background-size: 58vh;
+    width: 47vw;
+    height: 17.1vh;*/
+    width: 8.87rem;
   }
 
   .menu__lang-link {
@@ -1252,7 +1283,7 @@
 
   /*lead 425x340*/
   .lead__container {
-    max-width: 100%;
+    width: 100%;
     min-height: calc(100% - 3rem);
   }
 
@@ -1387,7 +1418,8 @@
 
 .cover__background {
   background-image: url(./images/320_cover-trains.jpg);
-  min-height: 84vh;
+  width: 100vw;
+  height: 12.5rem;
 }
 
 .cover__overlay {
@@ -1395,7 +1427,7 @@
 }
 
 .cover__link {
-  padding: 4.9rem 1rem;
+  padding: 2.08rem 1rem;
 }
 
 .cover__title {
