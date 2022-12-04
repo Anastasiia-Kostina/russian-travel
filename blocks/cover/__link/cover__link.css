@@ -1,0 +1,12 @@
+.cover__link {
+  display: block;
+  text-decoration: none;
+  padding: 12.3rem 14.6rem;
+  box-sizing: border-box;
+}
+
+.cover__link:hover {
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 44, 47, 0.8);
+}

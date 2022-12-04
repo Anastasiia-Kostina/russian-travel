@@ -1,0 +1,14 @@
+.place__paragraph_first {
+  grid-area: paragraph-first;
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.61;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}

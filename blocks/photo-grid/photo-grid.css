@@ -1,0 +1,6 @@
+.photo-grid {
+  margin: 5.75rem 0 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}

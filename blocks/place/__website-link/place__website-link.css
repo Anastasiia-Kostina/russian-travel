@@ -1,0 +1,13 @@
+.place__website-link {
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin: 0.75rem 0 0 0;
+  padding: 0;
+  width: 100%;
+}

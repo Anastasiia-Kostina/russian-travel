@@ -1,0 +1,12 @@
+.cover__background {
+  display: inline-block;
+  background-image: url(./images/1024_cover-trains.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 40rem;
+  object-fit: contain;
+  object-position: center;
+  z-index: 0;
+}

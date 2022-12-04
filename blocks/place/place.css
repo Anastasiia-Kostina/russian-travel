@@ -1,0 +1,17 @@
+.place {
+  display: grid;
+  grid-template-columns: 47.35% minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 1fr);
+  grid-template-areas:
+    "title website"
+    "image paragraph-first"
+    "image paragraph-second";
+  column-gap: 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: calc(100% - 5rem);
+  object-fit: cover;
+  object-position: center;
+}

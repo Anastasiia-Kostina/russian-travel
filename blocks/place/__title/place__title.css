@@ -1,0 +1,14 @@
+.place__title {
+  grid-area: title;
+  justify-self: stretch;
+  align-self: start;
+  word-break: break-word;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 1.05;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0 0 3.04rem 0;
+  padding: 0;
+}
