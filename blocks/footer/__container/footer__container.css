@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-items: flex-start;
   align-content: space-between;
-  flex-wrap: wrap;
   min-height: calc(100% - 4rem);
 }
 }
@@ -23,7 +22,6 @@
   flex-direction: column;
   justify-items: flex-start;
   align-content: space-between;
-  flex-wrap: wrap;
   min-height: calc(100% - 3rem);
 }
 }
