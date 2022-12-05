@@ -1,6 +1,6 @@
 .cover__background {
   display: block;
-  background-image: url(../../../images/1024_cover-trains.jpg);
+  background-image: url(../../../images/1280_cover-trains.jpg);
   background-position: center center;
   background-size: cover;
   word-break: break-word;
@@ -45,7 +45,7 @@
 
 @media (min-width: 960px) {
   .cover__background {
-    background-image: url(../../../images/1024_cover-trains.jpg);
+    background-image: url(../../../images/1280_cover-trains.jpg);
     width: 100%;
     min-height: 40rem;
   }
