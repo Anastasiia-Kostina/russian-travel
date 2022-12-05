@@ -664,6 +664,7 @@
 .cover {
   margin: 5.75rem auto 0; /*Was margin: 48px auto 0;*/
   padding: 0;
+  box-sizing: border-box;
 }
 
 .cover__container {
@@ -671,6 +672,7 @@
   position: relative;
   top: 0;
   left: 0;
+  box-sizing: border-box;
   width: 100%; /*Change for bigger sizes width: calc(100% - 6rem)*/
   /*min-height: 106.7vh;*/ /*Change for bigger sizes add     width: calc(100% - 6rem);
   min-height: 92.5vh;*/
@@ -689,6 +691,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   width: 100vw;
   min-height: 40rem;
   object-fit: contain;
@@ -702,6 +705,7 @@
   top: 0;
   left: 0;
   background-color: rgba(42, 44, 47, .3);
+  box-sizing: border-box;
   min-height: 100%;
   width: 100%;
   z-index: 0;
@@ -712,7 +716,7 @@
   text-decoration: none;
   padding: 12.3rem 14.6rem; /*~195px 232px*/ /*Нужно будет изменять паддинги для
   разных размеров*/
-  box-sizing: border-box;
+  box-sizing: border-box; /*Was already*/
 }
 
 .cover__link:hover {
@@ -734,6 +738,7 @@
   /*margin: 12.18rem auto 0;
   width: calc(100% - 45.3vw);*/ /*195px*/ /*Gonna need to change with diff sizes*/
   padding: 0;
+  box-sizing: border-box;
 }
 
 .cover__subtitle {
@@ -749,6 +754,7 @@
   /*margin: 2rem auto 12.18rem;
   width: calc(100% - 65vw);*/ /*195px*/ /*Gonna need to change with diff sizes*/
   padding: 0;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -1521,7 +1527,152 @@
 }
 
 .intro__title {
-  font-size: 3,37rem;
+  font-size: 3.37rem;
+  line-height: 1.07;
+}
+
+.intro__text {
+  font-size: 1rem;
+  line-height: 163%;
+}
+
+.photo-grid__items {
+  margin: 0 3.8%;
+  max-width: calc(100% - 6rem);
+  grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+  /*Хорошо встал разброс от 24 до 32% взяла ср ариф repeat(auto-fit, minmax(28%, 1fr))*/
+  grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  gap: 0.87rem;
+}
+
+ /*places 1280x800*/
+
+.places__container {
+  gap: 5rem;
+  max-width: calc(100% - 18.5rem);
+}
+
+.place {
+  grid-template-columns: 46.8% minmax(min-content, 1fr);
+  column-gap: 2.5rem;
+  min-height: calc(100% - 5.75rem);
+}
+
+.place__title {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin: 0 0 3rem 0;
+}
+
+.place__website {
+  margin: 0;
+  margin: 0 0 3rem 0;
+}
+
+.place__website-url-heading {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.place__website-link {
+  margin: 0.75rem 0 0 0;
+}
+
+.place__paragraph_first {
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+
+.place__paragraph_second {
+  font-size: 1.12rem;
+  line-height: 1.2;
+  margin: 1.6rem 0 0 0;
+}
+
+.place__paragraph_second:nth-of-type(2n) {
+  margin: 1.6rem 0 0 0;
+}
+
+/*cover 1280x800*/
+
+.cover {
+  margin: 5.75rem 0 0;
+}
+
+.cover__container {
+  margin: 0 3.7% 0 3.7%;
+  max-width: calc(100% - 6rem);
+  min-height: calc(100% - 5.75rem);
+}
+
+.cover__background {
+  background-image: url(./images/1280_cover-trains.jpg);
+  width: 100vw;
+  height: 46.25rem;
+}
+
+.cover__link {
+  padding: 15.4rem 8rem;
+}
+
+.cover__title {
+  font-size: 4.5rem;
+  line-height: 1.05;
+}
+
+.cover__subtitle {
+  font-size: 1.12rem;
+  line-height: 1.2;
+  margin: 2rem auto 0;
+  max-width: calc(100% - 41.4vw);
+}
+
+}
+
+
+/*----------------------max 1280------------------------*/
+/*header 1280x800*/
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+
+  .header__container {
+    min-height: calc(1vh - 1.75rem);
+    width: calc(100% - 3rem);
+  }
+
+
+/*lead 1280x800*/
+
+.lead__container {
+  width: calc(100% - 18.5rem);
+  min-height: calc(100% - 3.5rem);
+}
+
+.lead__title {
+  width: calc(100% - 26.8%);
+}
+
+.lead__subtitle {
+  width: calc(100% - 35%);
+}
+
+.lead__image_figure_caption {
+  margin: 0.5rem 0 0 1.5rem;
+}
+
+/*intro 1280x800*/
+.intro {
+  margin: 5.75rem auto 0;
+}
+
+.intro__container {
+  margin: 0 2% 0 3.1%;
+  width: calc(100% - 36.87rem);
+  min-height: calc(100% - 5.75rem);
+  margin: 0 34.6% 0 11.5%
+}
+
+.intro__title {
+  font-size: 3.37rem;
   line-height: 1.07;
 }
 
