@@ -29,6 +29,12 @@
 }
 }
 
+@media (min-width: 960px) {
+  .cover__link {
+    padding: 12.3rem 11.6rem;
+  }
+  }
+
 @media (min-width: 1280px) {
 .cover__link {
   padding: 15.4rem 8rem;

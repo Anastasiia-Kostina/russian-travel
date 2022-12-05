@@ -667,7 +667,7 @@
   box-sizing: border-box;
 }
 
-.cover__container {
+/*.cover__container {
   word-break: break-word;
   position: relative;
   top: 0;
@@ -676,7 +676,7 @@
   width: 100%; /*Change for bigger sizes width: calc(100% - 6rem)*/
   /*min-height: 106.7vh;*/ /*Change for bigger sizes add     width: calc(100% - 6rem);
   min-height: 92.5vh;*/
-  min-height: 100%;
+  /*min-height: 100%;
   margin: 0 auto;
   padding: 0;
   z-index: 0;
@@ -688,7 +688,7 @@
   breakpoint for every size*/
   /*background-size: 100vw; /*Change for bigger screens*/
   /*background-size: 29vh;*/
-  background-position: center center;
+  /*background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -696,6 +696,26 @@
   min-height: 40rem;
   object-fit: contain;
   object-position: center;
+  z-index: 0;
+}*/
+
+.cover__background {
+  display: block;
+  background-image: url(./images/1024_cover-trains.jpg); /*Be sure to change at every
+  breakpoint for every size*/
+  /*background-size: 100vw; /*Change for bigger screens*/
+  background-position: center center;
+  background-size: cover;
+  word-break: break-word;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; /*Change for bigger sizes width: calc(100% - 6rem)*/
+  min-height: 40rem; /*Change for bigger sizes add     width: calc(100% - 6rem);
+  min-height: 92.5vh;*/
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
   z-index: 0;
 }
 
@@ -963,18 +983,23 @@
     margin: 5.6rem auto 0;
   }
 
-  .cover__container {
+  /*.cover__container {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 100%;
-  }
+  }*/
 
   .cover__background {
     background-image: url(./images/768_cover-trains.jpg);
-    width: 100vw;
-    min-height: 30rem;
+    /* width: 100vw; */
+    /* min-height: 30rem; */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 31rem;
   }
 
   .cover__overlay {
@@ -1178,13 +1203,13 @@
   margin: 4.127rem 0 0;
 }
 
-.cover__container {
+/*.cover__container {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100%;
-}
+}*/
 
 .cover__background {
   background-image: url(./images/320_cover-trains.jpg);
@@ -1193,6 +1218,11 @@
   /*position: relative;
   top: -3px;
   left: -3px;*/
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
 }
 
 .cover__overlay {
@@ -1409,18 +1439,23 @@
   margin: 4.127rem 0 0;
 }
 
-.cover__container {
+/*.cover__container {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100%;
-}
+}*/
 
 .cover__background {
   background-image: url(./images/320_cover-trains.jpg);
   width: 100vw;
   height: 12.5rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
 }
 
 .cover__overlay {
@@ -1599,16 +1634,19 @@
   margin: 5.75rem 0 0;
 }
 
-.cover__container {
+/*.cover__container {
   margin: 0 3.7% 0 3.7%;
   max-width: calc(100% - 6rem);
   min-height: calc(100% - 5.75rem);
-}
+}*/
 
 .cover__background {
   background-image: url(./images/1280_cover-trains.jpg);
   width: 100vw;
   height: 46.25rem;
+  margin: 0 3.7% 0 3.7%;
+  max-width: calc(100% - 6rem);
+  min-height: 60%;
 }
 
 .cover__link {
@@ -1629,147 +1667,40 @@
 
 }
 
-
-/*----------------------max 1280------------------------*/
-/*header 1280x800*/
-@media screen and (min-width: 1000px) and (max-width: 1280px) {
-
-  .header__container {
-    min-height: calc(1vh - 1.75rem);
-    width: calc(100% - 3rem);
+/*----------------------------820-960-----*/
+@media (max-width: 960) {
+  .cover {
+    margin: 5.6rem auto 0;
   }
 
+  /*.cover__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+  }*/
 
-/*lead 1280x800*/
+  .cover__background {
+    background-image: url(./images/768_cover-trains.jpg);
+    /* width: 100vw; */
+    /* min-height: 30rem; */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 40rem;
+  }
 
-.lead__container {
-  width: calc(100% - 18.5rem);
-  min-height: calc(100% - 3.5rem);
-}
+  .cover__overlay {
+    min-height: 100%;
+  }
 
-.lead__title {
-  width: calc(100% - 26.8%);
-}
+  .cover__link {
+    padding: 12.3rem 11.6rem;
+  }
 
-.lead__subtitle {
-  width: calc(100% - 35%);
-}
-
-.lead__image_figure_caption {
-  margin: 0.5rem 0 0 1.5rem;
-}
-
-/*intro 1280x800*/
-.intro {
-  margin: 5.75rem auto 0;
-}
-
-.intro__container {
-  margin: 0 2% 0 3.1%;
-  width: calc(100% - 36.87rem);
-  min-height: calc(100% - 5.75rem);
-  margin: 0 34.6% 0 11.5%
-}
-
-.intro__title {
-  font-size: 3.37rem;
-  line-height: 1.07;
-}
-
-.intro__text {
-  font-size: 1rem;
-  line-height: 163%;
-}
-
-.photo-grid__items {
-  margin: 0 3.8%;
-  max-width: calc(100% - 6rem);
-  grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
-  /*Хорошо встал разброс от 24 до 32% взяла ср ариф repeat(auto-fit, minmax(28%, 1fr))*/
-  grid-template-rows: repeat(3, minmax(min-content, 1fr));
-  gap: 0.87rem;
-}
-
- /*places 1280x800*/
-
-.places__container {
-  gap: 5rem;
-  max-width: calc(100% - 18.5rem);
-}
-
-.place {
-  grid-template-columns: 46.8% minmax(min-content, 1fr);
-  column-gap: 2.5rem;
-  min-height: calc(100% - 5.75rem);
-}
-
-.place__title {
-  font-size: 4.5rem;
-  line-height: 1.05;
-  margin: 0 0 3rem 0;
-}
-
-.place__website {
-  margin: 0;
-  margin: 0 0 3rem 0;
-}
-
-.place__website-url-heading {
-  font-size: 0.75rem;
-  line-height: 1;
-}
-
-.place__website-link {
-  margin: 0.75rem 0 0 0;
-}
-
-.place__paragraph_first {
-  font-size: 1.12rem;
-  line-height: 1.2;
-}
-
-.place__paragraph_second {
-  font-size: 1.12rem;
-  line-height: 1.2;
-  margin: 1.6rem 0 0 0;
-}
-
-.place__paragraph_second:nth-of-type(2n) {
-  margin: 1.6rem 0 0 0;
-}
-
-/*cover 1280x800*/
-
-.cover {
-  margin: 5.75rem 0 0;
-}
-
-.cover__container {
-  margin: 0 3.7% 0 3.7%;
-  max-width: calc(100% - 6rem);
-  min-height: calc(100% - 5.75rem);
-}
-
-.cover__background {
-  background-image: url(./images/1280_cover-trains.jpg);
-  width: 100vw;
-  height: 46.25rem;
-}
-
-.cover__link {
-  padding: 15.4rem 8rem;
-}
-
-.cover__title {
-  font-size: 4.5rem;
-  line-height: 1.05;
-}
-
-.cover__subtitle {
-  font-size: 1.12rem;
-  line-height: 1.2;
-  margin: 2rem auto 0;
-  max-width: calc(100% - 41.4vw);
-}
-
+  .cover__subtitle {
+    max-width: calc(100% - 23.2vw);
+  }
 }
