@@ -1,6 +1,6 @@
-.logo {
+.header__logo {
   display: inline-block;
-  background: url(./images/header-logo.svg);
+  background: url(../../../images/header-logo.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -11,21 +11,21 @@
 }
 
 @media (max-width: 768px) {
-  .logo {
+  .header__logo {
     background-size: contain;
     width: 11rem;
   }
 }
 
 @media (max-width: 320px) {
-  .logo {
+  .header__logo {
     background-size: contain;
     width: 8.87rem;
   }
 }
 
 @media (max-width: 425px) {
-.logo {
+.header__logo {
   background-size: contain;
   /*background-size: 58vh;
   width: 47vw;

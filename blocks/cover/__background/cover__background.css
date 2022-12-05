@@ -65,7 +65,7 @@
 
 @media (min-width: 1280px) {
 .cover__background {
-  background-image: url(./images/1280_cover-trains.jpg);
+  background-image: url(../../../images/1280_cover-trains.jpg);
   width: 100vw;
   height: 46.25rem;
   margin: 0 3.7% 0 3.7%;
