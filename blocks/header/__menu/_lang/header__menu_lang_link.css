@@ -1,4 +1,4 @@
-.menu__lang-link {
+.menu__lang_link {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.17;
@@ -10,14 +10,14 @@
   margin-right: 1.2rem;
 }
 
-.menu__lang-link.active {
+.menu__lang_link.active {
   position: relative;
   top: -2px;
   left: 0;
   width: fit-content;
 }
 
-.menu__lang-link.active::after {
+.menu__lang_link.active::after {
   content: "";
   display: block;
   position: relative;
@@ -28,7 +28,7 @@
   background-color: #FFFFFF;
 }
 
-.menu__lang-link::after {
+.menu__lang_link::after {
   content: "";
   display: block;
   width: 0%;
@@ -37,31 +37,31 @@
   transition: width 0.4s ease-in-out;
 }
 
-.menu__lang-link:hover:after {
+.menu__lang_link:hover:after {
   cursor: pointer;
   width: 100%;
 }
 
-.menu__lang-link:last-of-type {
+.menu__lang_link:last-of-type {
   display: block;
   margin-right: 0;
 }
 
 @media (max-width: 320px) {
-.menu__lang-link {
+.menu__lang_link {
   font-size: 1.12rem;
   text-align: right;
   line-height: 1.1;
   top: -4.5px;
 }
 
-.menu__lang-link.active {
+.menu__lang_link.active {
   top: -5px;
 }
 }
 
 @media (max-width: 425px) {
-  .menu__lang-link {
+  .menu__lang_link {
     font-size: 1rem;
     line-height: 1.25;
   }
