@@ -2,31 +2,31 @@
   display: inline-block;
   background: url(../../../images/header-logo.svg);
   background-size: contain;
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
-  width: 17.2vw;
-  height: 8.7vh;
+  width: 176px;
+  min-height: 52px;
   object-fit: contain;
   object-position: center;
 }
 
-@media (max-width: 768px) {
+/*@media (min-width: 1281px) {
   .header__logo {
-    background-size: contain;
-    width: 11rem;
+    width: 44.4%;
+    min-height: 62px;
+  }
+}*/
+
+@media (max-width: 425px) {
+  .header__logo {
+    width: 44.4%;
+    min-height: 42px;
   }
 }
 
 @media (max-width: 320px) {
   .header__logo {
-    background-size: contain;
-    width: 8.87rem;
+    width: 49.4%;
+    min-height: 42px;
   }
-}
-
-@media (max-width: 425px) {
-.header__logo {
-  background-size: contain;
-  width: 8.87rem;
-}
 }

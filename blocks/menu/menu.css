@@ -1,10 +1,31 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  gap: 18px;
   position: relative;
   top: 0;
   left: 0;
+  min-width: 62px; /*Важно. Влияет на 768, 320 и пр.*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+/*@media (max-width: 768px) {
+  .menu {
+    max-width: 78px;
+  }
+}*/
+
+@media (max-width: 320px) {
+  .menu {
+    min-width: 62px;
+  }
+}
+
+/*@media (max-width: 320px) {
+  .menu {
+    min-width: 62px;
+  }
+}*/
