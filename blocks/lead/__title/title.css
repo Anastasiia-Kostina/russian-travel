@@ -1,8 +1,9 @@
 .lead__title {
-  box-sizing: border-box;
   margin: 0 auto;
+  /*text-align: center;*/
   padding: 0;
   max-width: 56.25vw; /*from 1280*/
+  box-sizing: border-box;
   word-break: break-word;
   font-style: normal;
   font-weight: 900;
@@ -46,25 +47,25 @@ not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px
 
 @media (max-width: 1024px) {
   .lead__title {
-    font-size: 9.38vw;
-    margin: 0 24px;
+    margin: 0 auto;
     max-width: 93.75vw;
+    font-size: 9.38vw;
   }
   }
 
 @media (max-width: 768px) {
   .lead__title {
-    font-size: 12.5vw;
-    margin: 0 24px;
+    margin: 0 auto;
     max-width: 93.75vw;
+    font-size: 12.5vw;
   }
   }
 
 @media (max-width: 656px) {
   .lead__title {
-    font-size: 12.5vw;
-    margin: 0 20px;
+    margin: 0 auto;
     max-width: 93.75vw;
+    font-size: 12.5vw;
   }
   }
 
@@ -78,10 +79,10 @@ not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px
 
 @media (max-width: 320px) {
   .lead__title {
-    font-size: 12.5vw;
     line-height: 1.1;
-    margin: 0 16px;
+    margin: 0 auto;
     max-width: 90vw;
+    font-size: 12.5vw;
   }
   }
 
