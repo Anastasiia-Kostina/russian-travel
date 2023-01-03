@@ -3,35 +3,48 @@
   margin: 32px auto 0;
   padding: 0;
   max-width: 50vw;
+  min-width: 640px;
   text-align: center;
   word-break: break-word;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.34vw;
+  font-size: 30px;
   line-height: 1.2;
   text-align: center;
   color: #FFFFFF;
 }
 
+@media (min-width: 1281px) { /*a bit out of perfpix*/
+  .lead__subtitle {
+    margin: 32px auto 0;
+    max-width: 50vw;
+    min-width: 640px;
+    font-size: 2.34vw;
+  }
+  }
+
 @media (max-width: 1024px) { /*a bit out of perfpix*/
   .lead__subtitle {
     margin: 32px auto 0;
     max-width: 62.5vw;
-    font-size: 2.93vw;
+    min-width: 640px;
+    font-size: 30px;
   }
   }
 
 @media (max-width: 768px) {
   .lead__subtitle {
   margin: 32px auto 0;
-  max-width: 83.33vw;
+  max-width: 83.33vw; /*640px*/
+  min-width: 508px;
   font-size: 3.91vw;
   }
 }
 @media (max-width: 656px) {
 .lead__subtitle {
   margin: 24px auto 0;
-  max-width: 77.21vw;
+  max-width: 77.21vw; /*508px*/
+  min-width: 364px;
   font-size: 4.57vw;
 }
 }
@@ -39,7 +52,8 @@
 @media (max-width: 425px) {
   .lead__subtitle {
     margin: 20px auto 0;
-    max-width: 85.21vw;
+    max-width: 85.21vw; /*364px*/
+    min-width: 288px;
     font-size: 4.8vw;
   }
   }
@@ -47,7 +61,8 @@
 @media (max-width: 320px) {
 .lead__subtitle {
   margin: 16px auto 0;
-  max-width: 90vw;
+  max-width: 90vw; /*288px*/
+  min-width: 288px;
   font-size: 5vw;
   line-height: 1.25;
 }

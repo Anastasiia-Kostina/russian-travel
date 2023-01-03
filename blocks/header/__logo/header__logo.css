@@ -16,17 +16,23 @@
     min-height: 62px;
   }
 }*/
+@media (min-width: 1281px) {
+  .header__logo {
+    width: 13.75%;
+    min-height: 62px;
+  }
+}
 
-@media (max-width: 425px) {
+/*@media (max-width: 425px) {
   .header__logo {
     width: 44.4%;
     min-height: 42px;
   }
-}
+}*/
 
 @media (max-width: 320px) {
   .header__logo {
-    width: 49.4%;
+    width: 44.38vw;
     min-height: 42px;
   }
 }

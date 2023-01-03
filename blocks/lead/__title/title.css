@@ -3,11 +3,12 @@
   /*text-align: center;*/
   padding: 0;
   max-width: 56.25vw; /*from 1280*/
+  min-width: 720px;
   box-sizing: border-box;
   word-break: break-word;
   font-style: normal;
   font-weight: 900;
-  font-size: 7.5vw;
+  font-size: 96px;
   line-height: 1.04;
   letter-spacing: 0;
   text-align: center;
@@ -45,11 +46,21 @@ not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px
   }
 }*/
 
+@media (min-width: 1281px) {
+  .lead__title {
+    margin: 0 auto;
+    max-width: 56.25vw;
+    min-width: 720px;
+    font-size: 7.5vw;
+  }
+  }
+
 @media (max-width: 1024px) {
   .lead__title {
     margin: 0 auto;
     max-width: 93.75vw;
-    font-size: 9.38vw;
+    /*min-width: 720px;*/
+    font-size: 96px;
   }
   }
 
@@ -57,6 +68,7 @@ not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px
   .lead__title {
     margin: 0 auto;
     max-width: 93.75vw;
+    min-width: 614px;
     font-size: 12.5vw;
   }
   }
@@ -64,7 +76,8 @@ not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px
 @media (max-width: 656px) {
   .lead__title {
     margin: 0 auto;
-    max-width: 93.75vw;
+    max-width: 93.75vw; /*614px*/
+    min-width: 364px;
     font-size: 12.5vw;
   }
   }
@@ -77,11 +90,21 @@ not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px
   }
   }*/
 
+@media (max-width: 425px) {
+  .lead__title {
+    margin: 0 auto;
+    max-width: 85.21vw; /*364px*/
+    min-width: 288px;
+    font-size: 11.41vw;
+  }
+  }
+
 @media (max-width: 320px) {
   .lead__title {
     line-height: 1.1;
     margin: 0 auto;
     max-width: 90vw;
+    min-width: 288px;
     font-size: 12.5vw;
   }
   }

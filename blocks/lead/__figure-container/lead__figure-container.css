@@ -9,6 +9,7 @@
   /*object-fit: cover;
   object-position: center center;*/
 }
+/*Look at 2180 on 3000 the pic is too weird mb b/c of the cover*/
 
 @media (max-width: 1024px) {
 .lead__figure-container {
