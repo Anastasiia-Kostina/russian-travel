@@ -14,14 +14,14 @@
   color: #FFFFFF;
 }
 
-@media (min-width: 1281px) { /*a bit out of perfpix*/
+/*@media (min-width: 1281px) {
   .lead__subtitle {
     margin: 32px auto 0;
     max-width: 50vw;
     min-width: 640px;
     font-size: 2.34vw;
   }
-  }
+  }*/
 
 @media (max-width: 1024px) { /*a bit out of perfpix*/
   .lead__subtitle {
@@ -45,7 +45,7 @@
   margin: 24px auto 0;
   max-width: 77.21vw; /*508px*/
   min-width: 364px;
-  font-size: 4.57vw;
+  font-size: 4vw;
 }
 }
 
@@ -54,7 +54,7 @@
     margin: 20px auto 0;
     max-width: 85.21vw; /*364px*/
     min-width: 288px;
-    font-size: 4.8vw;
+    font-size: 4.2vw;
   }
   }
 
