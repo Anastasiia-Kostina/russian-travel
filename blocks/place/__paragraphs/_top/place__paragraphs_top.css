@@ -1,5 +1,9 @@
-.place__paragraph_first {
-  grid-area: paragraph-first;
+.place__paragraphs_top {
+  width: 100%;
+}
+
+/*.place__paragraph_top {
+  grid-area: paragraph_top;
   word-break: break-word;
   font-style: normal;
   font-weight: 400;
@@ -14,29 +18,29 @@
 }
 
 @media (max-width: 320px) {
-.place__paragraph_first {
+.place__paragraph_top {
   font-size: 1rem;
   line-height: 1.63;
 }
 }
 
 @media (max-width: 425px) {
-.place__paragraph_first {
+.place__paragraph_top {
   font-size: 1rem;
   line-height: 1.63;
 }
 }
 
 @media (max-width: 768px) {
-.place__paragraph_first {
+.place__paragraph_top {
   font-size: 1rem;
   line-height: 1.61;
 }
 }
 
 @media (min-width: 1280px) {
-.place__paragraph_first {
+.place__paragraph_top {
   font-size: 1.12rem;
   line-height: 1.2;
 }
-}
+}*/

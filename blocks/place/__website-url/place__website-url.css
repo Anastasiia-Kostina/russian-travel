@@ -1,0 +1,24 @@
+.place__website-url {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+}
+
+/*@media (max-width: 1024px) {
+  .place__website-url {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+  }
+
+@media (max-width: 768px) {
+  .place__website-url {
+    font-size: 0.73rem;
+  }
+}*/
