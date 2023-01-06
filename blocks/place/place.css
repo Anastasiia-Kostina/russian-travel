@@ -6,12 +6,13 @@
     "title website"
     "image paragraphs";
   column-gap: 40px;
+  row-gap: 48px;
   margin: 0;
   padding: 0;
   max-width: 76.88vw;
-  min-height: 584px;
-  object-fit: cover;
-  object-position: center;
+  min-height: 584px; /*I hate this part at it took me 2 hrs to realize why 1024 went wrong!*/
+  /*object-fit: cover;
+  object-position: center;*/
   box-sizing: border-box;
 }
 
@@ -20,27 +21,31 @@
     grid-template-columns: 42.9vw minmax(min-content, 1fr); /* 47.41vw if I count*/
     column-gap: 32px;
     max-width: 90.63vw;
+    min-height: 564px;
   }
   }
 
 @media (max-width: 768px) {
 .place {
-  grid-template-columns: 44vw minmax(min-content, 1fr); /*47.22 if I count*/
+  grid-template-columns: 44.27vw minmax(min-content, 1fr); /*47.22 if I count*/
   column-gap: 28px;
-  max-width: 90.63vw;
+  max-width: 93.75vw;
+  min-height: auto;
 }
 }
 
 @media (max-width: 656px) {
   .place {
-    grid-template-columns: minmax(min-content, 100%);
+    grid-template-columns: 100%;
     grid-template-rows: min-content;
     grid-template-areas:
       "title"
       "website"
       "image"
-      "image"
       "paragraphs";
+    row-gap: 32px;
+    max-width: 92.99vw;
+    min-height: auto;
   }
   }
 
@@ -61,7 +66,7 @@
   }
   } Plan b*/
 
-  @media (max-width: 425px) {
+  /*@media (max-width: 425px) {
     .place {
       grid-template-columns: minmax(min-content, 100%);
       grid-template-rows: min-content;
@@ -69,11 +74,25 @@
         "title"
         "website"
         "image"
-        "image"
         "paragraphs";
+      row-gap: 32px;
     }
-    }
+    } OK*/
 
+@media (max-width: 425px) {
+  .place {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs";
+    row-gap: 32px;
+    max-width: 100vw;
+    min-height: auto;
+   }
+  }
 
 /*@media (max-width: 425px) {
   .place {
@@ -117,8 +136,10 @@
         "title"
         "website"
         "image"
-        "image"
         "paragraphs";
     min-width: 288px;
+    max-width: 100vw;
+    min-height: auto;
+    /*row-gap: 32px;*/
   }
   }

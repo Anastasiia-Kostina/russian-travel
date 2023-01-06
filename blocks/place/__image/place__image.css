@@ -5,6 +5,7 @@
   max-height: 460px;
   object-fit: cover;
   object-position: center;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
@@ -15,12 +16,19 @@
 
 @media (max-width: 768px) {
   .place__image {
-    max-height: 340px;
+    max-width: 100%;
+    max-height: 335px;
 }
 }
 
+@media (max-width: 656px) {
+  .place__image {
+    max-height: 610px;
+  }
+  }
+
 @media (max-width: 320px) {
   .place__image {
-    max-height: 320px;
+    max-height: 321px; /*Works perfect*/
 }
 }

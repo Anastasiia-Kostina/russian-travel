@@ -27,34 +27,36 @@
 
 @media (max-width: 768px) {
   .places {
-    gap: 80px;
+    gap: 73px; /*but they are different there 72, 73*/
     max-width: calc(100% - 48px);
-    min-width: 288px;
-    margin: 88px auto 0;
+    margin: 88px 24px 0;
   }
 }
 
 @media (max-width: 656px) {
   .places {
     margin: 80px auto 0;
-    max-width: 100%;
+    max-width: 93vw;
     min-width: 425px;
+    gap: 64px;
   }
   }
 
 @media (max-width: 425px) {
   .places {
     gap: 50px;
-    max-width: 100%;
+    max-width: 100vw;
     margin: 72px 0 0;
+    min-width: 288px;
   }
   }
 
 @media (max-width: 320px) {
 .places {
   gap: 50px;
-  max-width: 100%;
+  max-width: 320px;
   margin: 64px 0 0;
+  min-width: 288px;
 }
 }
 
