@@ -7,13 +7,13 @@
   position: relative;
   top: 0;
   left: 0;
-  box-sizing: border-box;
   min-width: 90vw;
   max-width: 92.5vw;
   min-height: 42px;
   /*max-width: 1184px;*/
   margin: 28px auto 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) { /*1278-1279 breaks solved min-max*/
@@ -49,6 +49,8 @@
   .header {
     max-width: 90vw;
     /*max-width: 288px;*/
-    margin: 16px auto 0;
+    margin: 16px 16px 0;
+    max-width: 288px;
+    min-width: 10vw;
   }
 }

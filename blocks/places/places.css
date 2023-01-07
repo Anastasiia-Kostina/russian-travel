@@ -11,16 +11,16 @@
   margin: 92px auto 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: calc(100% - 296px);
-  min-width: 928px;
+  max-width: 76.88vw;
+  min-width: 920px;
   object-fit: cover;
   object-position: center;
 }
 
 @media (max-width: 1024px) {
   .places {
-    margin: 92px 48px 0;
-    max-width: calc(100% - 96px);
+    margin: 92px auto 0;
+    max-width: 90.63vw;
     min-width: 670px;
   }
   }
@@ -28,15 +28,16 @@
 @media (max-width: 768px) {
   .places {
     gap: 73px; /*but they are different there 72, 73*/
-    max-width: calc(100% - 48px);
-    margin: 88px 24px 0;
+    max-width: 93.75vw;
+    min-width: 500px;
+    margin: 88px auto 0 24px;
   }
 }
 
 @media (max-width: 656px) {
   .places {
     margin: 80px auto 0;
-    max-width: 93vw;
+    max-width: 89.63vw;
     min-width: 425px;
     gap: 64px;
   }
