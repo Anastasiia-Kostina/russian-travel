@@ -1,24 +1,7 @@
 .lead__image {
   margin: 0;
   padding: 0;
-  width: 100%; /*именно width,  а не max-width or min; а
-  др. в контейнере уже указала*/
-  /*max-width: min-content;
-  /*min-width: 76.88vw;*/
+  width: 100%;
   object-fit: cover;
   object-position: center center;
 }
-
-@media (max-width: 1024px) { /*781 break*/
-  .lead__image {
-    /*max-width: 90.63vw;*/
-    /*min-width: 87.63vw;*/
-    /*max-width: 90.63vw;*/
-    }
-    }
-
-@media (max-width: 768px) {
-  .lead__image {
-    /*max-width: 100vw;*/
-    }
-    }

@@ -1,12 +1,12 @@
 .menu__lang-link {
-  font-size: 1.5rem;
+  position: relative;
+  top: 2px;
+  left: 0;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.17;
   color: #FFFFFF;
   text-decoration: none;
-  position: relative;
-  top: 2px;
-  left: 0;
 }
 
 .menu__lang-link::after {
@@ -47,7 +47,7 @@
   background-color: #FFFFFF;
 }
 
-@media (max-width: 425px) {
+/*@media (max-width: 425px) {
   .menu__lang-link {
     top: 0;
     font-size: 1.125rem;
@@ -58,12 +58,12 @@
     top: 0;
     margin: auto 0 4px;
   }
-}
+} no need now*/
 
 @media (max-width: 320px) {
   .menu__lang-link {
     top: 0;
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.1;
   }
 
@@ -72,14 +72,3 @@
     margin: auto 0 4px;
   }
 }
-
-/*@media (max-width: 320px) {
-  .menu__lang-link {
-    font-size: 1.125rem;
-    line-height: 1.1;
-  }
-
-  .menu__lang-link_active {
-    margin: auto 0 4px;
-  }
-}*/

@@ -1,10 +1,8 @@
 .lead__title {
   margin: 0 auto;
-  /*text-align: center;*/
   padding: 0;
-  max-width: 56.25vw; /*from 1280*/
   min-width: 720px;
-  box-sizing: border-box;
+  max-width: 56.25vw; /*from 1280*/
   word-break: break-word;
   font-style: normal;
   font-weight: 900;
@@ -15,163 +13,29 @@
   color: #FFFFFF;
 }
 
-/*interesting but
-not ok it doesn't work properly @media (max-width: 1280px) and (min-width: 320px) {
-  /*96px - 40px */
-  /*.lead__title {
-  font-size: calc(11.3821px + 14.048812px);
-  /*40px=a*2.28px + b //1
-  96px=a*7.2px + b //2
-  40px - a*2.28px =b
-  96px=a*7.2px + (40px - a*2.28px)
-  96px-40px=a*7.2px - a*2.28px
-  56px=a*4.92px
-  a=56px/4.92px
-  a=11.3821px
-
-  40px - 11.3821* 2.28px= b
-  40px - 25.951188px = b
-  b=14.048812
-
-  y= 11.3821px + 14.048812px
-  y=25.430912*/
-/*}
-/*}*/
-
-/*Nope @media (max-width: 768px) and (min-width: 321px) {
-  .lead__title {
-  font-size: calc(11.3821px + 14.048812px);
-  margin: 0 24px;
-  max-width: 93.75vw;
-  }
-}*/
-
 @media (min-width: 1281px) {
   .lead__title {
-    margin: 0 auto;
-    max-width: 56.25vw;
-    min-width: 720px;
     font-size: 7.5vw;
   }
   }
 
 @media (max-width: 1024px) {
   .lead__title {
-    margin: 0 auto;
     max-width: 93.75vw;
-    /*min-width: 720px;*/
-    font-size: 96px;
   }
   }
 
 @media (max-width: 768px) {
   .lead__title {
-    margin: 0 auto;
-    max-width: 93.75vw;
-    min-width: 614px;
+    min-width: 10vw; /*I put 10vw instead of 614px and don't need 425 and 656*/
     font-size: 12.5vw;
-  }
-  }
-
-@media (max-width: 656px) {
-  .lead__title {
-    margin: 0 auto;
-    max-width: 93.75vw; /*614px*/
-    min-width: 364px;
-    font-size: 12.5vw;
-  }
-  }
-
-/*@media (max-width: 545px) {
-  .lead__title {
-    font-size: 12.5vw;
-    margin: 0 16px;
-    max-width: 93.75vw;
-  }
-  }*/
-
-@media (max-width: 425px) {
-  .lead__title {
-    margin: 0 auto;
-    max-width: 85.21vw; /*364px*/
-    min-width: 288px;
-    font-size: 12vw;
   }
   }
 
 @media (max-width: 320px) {
   .lead__title {
     line-height: 1.1;
-    margin: 0 auto;
     max-width: 90vw;
-    min-width: 10vw;
-    /*OK font-size: 12.5vw;*/
-    font-size: 40px;
+    font-size: 40px; /*OK font-size: 12.5vw;*/
   }
   }
-
-  /*@media (max-width: 730px) {
-    .lead__title {
-    font-size: calc(2.5rem + 56 * (100vw - 389px) / 301); /*512 93.75% of 546*/
-    /*margin: 0 20px;
-    max-width: 93.75vw;
-  }
-  }*/
-
-/*@media (max-width: 546px) and (min-width: 321px) {
-  .lead__title {
-  font-size: calc(2.5rem + 56 * (100vw - 285px) / 225); /* 321-16+16=285; 546-36; 510-285=225*/
-  /*margin: 0 16px;
-  max-width: 93.75vw;
-}
-}*/
-
-/*ok @media (max-width: 768px) {
-  .lead__title {
-    margin: 48px 24px 0;
-    max-width: 93.75vw;
-  }
-  }*/
-
-/*Need @media (max-width: 320px) {
-  .lead__title {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    max-width: 90vw;
-    margin: 0 16px;
-  }
-  }*/
-
-/*ok @media (max-width: 1280px) and (min-width: 320px) {
-  /*96px - 40px */
-  /*.lead__title{
-  font-size: calc(2.5rem + 56 * (100vw - 320px) / 960);
-}
-}*/
-
-/* ok @media (max-width: 320px) {
-.lead__title {
-  font-size: 2.5rem;
-  line-height: 1.1;
-  max-width: calc(100% - 1.5rem);
-}
-}*/
-
-/*@media (max-width: 425px) {
-.lead__title {
-  font-size: 2.6rem;
-  max-width: calc(100% - 1.5rem);
-}
-}*/
-
-/*ok @media (max-width: 768px) {
-  .lead__title {
-    width: calc(100% - 1.5rem);
-  }
-}*/
-
-/*ok @media (min-width: 1280px) {
-.lead__title {
-  width: calc(100% - 26.8%);
-}
-}*/

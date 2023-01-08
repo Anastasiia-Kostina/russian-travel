@@ -2,11 +2,11 @@
   display: inline;
   margin: 8px 0 0;
   padding: 0;
-  max-width: 12.32vw;
   min-height: 14px;
+  max-width: 12.32vw;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.625rem;
+  font-size: 10px;
   line-height: 1.4;
   letter-spacing: 1.5px;
   text-transform: uppercase;

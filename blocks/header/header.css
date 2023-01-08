@@ -1,56 +1,31 @@
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  /*flex: 2 0 78px;*/
-  position: relative;
-  top: 0;
-  left: 0;
   min-width: 90vw;
   max-width: 92.5vw;
   min-height: 42px;
-  /*max-width: 1184px;*/
   margin: 28px auto 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media (max-width: 1024px) { /*1278-1279 breaks solved min-max*/
+@media (max-width: 1024px) {
   .header {
     max-width: 90.625vw;
-    /*max-width: 928px;*/
   }
 }
 
-/*@media (max-width: 896px) { /*769 breaks mb*/
-  /*.header {
-    /*max-width: 93.7499vw;*/
-    /*min-width: 720px;
-    margin: 28px 48px 0;
-  }
-}*/
-
-@media (max-width: 768px) { /*769 breaks mb*/
+@media (max-width: 768px) {
   .header {
     max-width: 93.75vw;
-    /*max-width: 720px;*/
   }
 }
 
-/*@media (max-width: 424px) {
+@media (max-width: 320px) {
   .header {
-    min-width: 288px;
+    max-width: 288px; /*works better than 90vw for smaller screens but the consistence...*/
     margin: 16px 16px 0;
-  }
-}*/
-
-@media (max-width: 320px) { /*321 breaks mb*/
-  .header {
-    max-width: 90vw;
-    /*max-width: 288px;*/
-    margin: 16px 16px 0;
-    max-width: 288px;
     min-width: 10vw;
   }
 }

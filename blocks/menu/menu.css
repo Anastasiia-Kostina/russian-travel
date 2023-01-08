@@ -12,20 +12,3 @@
   list-style: none;
 }
 
-/*@media (max-width: 768px) {
-  .menu {
-    max-width: 78px;
-  }
-}*/
-
-@media (max-width: 320px) {
-  .menu {
-    min-width: 62px;
-  }
-}
-
-/*@media (max-width: 320px) {
-  .menu {
-    min-width: 62px;
-  }
-}*/
