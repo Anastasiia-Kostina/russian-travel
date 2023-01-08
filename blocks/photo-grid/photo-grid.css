@@ -2,9 +2,17 @@
   margin: 92px 48px 0;
   padding: 0;
   max-width: 92.50vw;
-  min-width: 72.50vw;
+  min-width: 72vw;
+  box-sizing: border-box;
   /*object-fit: cover;
   object-position: center center;*/
+}
+
+@media (min-width: 1281px) {
+.photo-grid {
+  margin: 92px auto 0;
+  max-width: 92.50vw;
+}
 }
 
 @media (max-width: 1024px) {
@@ -24,6 +32,14 @@
 
 @media (max-width: 656px) {
   .photo-grid {
+    margin: 80px 18px 0;
+    max-width: 93vw;
+    min-width: 288px;
+  }
+  }
+
+/*@media (max-width: 656px) {
+  .photo-grid {
     margin: 80px 20px 0;
     max-width: 93.75vw;
     min-width: 390px;
@@ -36,12 +52,12 @@
     max-width: 92.47vw;
     min-width: 288px;
   }
-  }
+  }*/
 
 @media (max-width: 320px) {
 .photo-grid {
   margin: 64px auto 0;
   max-width: 90vw;
-  min-width: 288px;
+  min-width: auto;
 }
 }

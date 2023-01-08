@@ -9,39 +9,27 @@
   margin: 92px auto 0;
   padding: 0;
   max-width: 92.50vw;
-  /*height: 740px;*/
-  z-index: 0;
-  /*opacity: 0.8;*/
   box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
   .cover {
     margin: 92px 0 0;
-    max-width: 100%;
-    /*height: 640px;*/
+    max-width: 100vw;
+    min-width: 100%; /*need for less than 320*/
   }
   }
 
 @media (max-width: 768px) {
   .cover {
     margin: 90px 0 0;
-    /*height: 480px;*/
-    /*max-width: 100vw;*/
   }
   }
-
-/*@media (max-width: 425px) {
-  .cover {
-    margin: 4.127rem 0 0;
-  }
-  }*/
 
 @media (max-width: 320px) {
-.cover {
-  margin: 66px 0 0;
-  /*height: 200px;*/
-}
-}
+  .cover {
+    margin: 66px 0 0;
+  }
+  }
 
 

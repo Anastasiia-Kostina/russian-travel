@@ -3,33 +3,33 @@
   grid-template-columns: minmax(min-content, 1fr);
   grid-template-rows: minmax(min-content, 1fr);
   justify-content: start;
-  align-content: space-between;
-  justify-items: start;
-  align-items: end;
+  /*align-content: space-between; not here*/
+  /*justify-items: start;
+  align-items: end; not here*/
   gap: 80px;
   /*margin: 0 auto;*/
   margin: 92px auto 0;
   padding: 0;
-  box-sizing: border-box;
-  max-width: 76.88vw;
   min-width: 920px;
-  object-fit: cover;
-  object-position: center;
+  max-width: 76.88vw;
+  /*object-fit: cover;
+  object-position: center; not here*/
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
   .places {
-    margin: 92px auto 0;
+    /*margin: 92px auto 0; not here*/
     max-width: 90.63vw;
-    min-width: 670px;
+    min-width: 710px;
   }
   }
 
 @media (max-width: 768px) {
   .places {
     gap: 73px; /*but they are different there 72, 73*/
+    min-width: 320px;
     max-width: 93.75vw;
-    min-width: 500px;
     margin: 88px auto 0 24px;
   }
 }
@@ -38,7 +38,7 @@
   .places {
     margin: 80px auto 0;
     max-width: 89.63vw;
-    min-width: 425px;
+    min-width: 280px;
     gap: 64px;
   }
   }
@@ -54,10 +54,10 @@
 
 @media (max-width: 320px) {
 .places {
-  gap: 50px;
-  max-width: 320px;
+  /*gap: 50px;
+  max-width: 320px; no need as 425*/
   margin: 64px 0 0;
-  min-width: 288px;
+  /*min-width: 288px; no need as 425*/
 }
 }
 

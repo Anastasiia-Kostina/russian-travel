@@ -10,7 +10,7 @@
   }
 }
 
-@media (max-width: 656px) {
+/*@media (max-width: 656px) {
   .intro {
     margin: 80px auto 0;
   }
@@ -20,7 +20,7 @@
 .intro {
   margin: 72px auto 0;
 }
-}
+} now no need*/
 
 @media (max-width: 320px) {
   .intro {

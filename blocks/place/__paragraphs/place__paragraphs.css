@@ -3,59 +3,53 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-width: 450px;
   max-width: 37.85vw;
-  min-width: 456px;
   word-break: break-word;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6; /*1.63 doesn't work properly*/
-  letter-spacing: 0;
+  /*letter-spacing: 0;*/
   color: #FFFFFF;
   text-align: start;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
   .place__paragraphs {
+    min-width: 350px;
     max-width: 44.53vw;
-    min-width: 352px;
   }
   }
 
 @media (max-width: 768px) {
-.place__paragraphs {
-  max-width: 45.83vw;
-  min-width: 300px;
-  font-size: 16px;
-  line-height: 1.61;
-}
-}
+  .place__paragraphs {
+    min-width: 288px;
+    max-width: 45.83vw;
+    font-size: 16px;
+    line-height: 1.61;
+  }
+  }
 
 @media (max-width: 656px) {
   .place__paragraphs {
+    margin: 0 0 0 16px;
     max-width: 92.99vw;
-    min-width: 300px;
+    /*min-width: 300px;*/
     min-height: auto;
-    font-size: 16px;
-    line-height: 1.61;
-    margin: 0px 0 0 16px;
+    /*font-size: 16px;
+    line-height: 1.61; I have it in 768*/
   }
   }
-
-@media (max-width: 425px) {
-  .place__paragraphs {
-    margin: 0 auto;
-}
-}
 
 @media (max-width: 320px) {
   .place__paragraphs {
-    margin: 0 16px 0;
-    max-width: 90vw;
+    /*margin: 0 16px 0; no need here*/
     min-width: 280px;
+    max-width: 90vw;
     font-size: 16px;
     line-height: 1.62;
   }

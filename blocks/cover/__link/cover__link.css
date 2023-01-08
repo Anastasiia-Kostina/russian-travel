@@ -1,7 +1,7 @@
 .cover__link {
   display: block;
   text-decoration: none;
-  padding: 19.14vw 24.38vw;
+  padding: 19.14vw 22.38vw; /*works better than 24.38*/
   /*padding: 245px 312px;*/
   box-sizing: border-box;
   background: rgba(42, 44, 47, 0.3);
@@ -15,17 +15,18 @@
 
 @media (max-width: 1024px) {
   .cover__link {
-    padding: 19.04vw 22.66vw;
+    padding: 19.04vw 18.66vw; /*works better than 22.66*/
+    /*padding: 14.97vw 13.54vw;*/
   }
   }
 
 @media (max-width: 768px) {
   .cover__link {
-    padding: 14.97vw 13.54vw;
+    padding: 15.5vw 13.54vw;
   }
   }
 
-@media (max-width: 694px) {
+/*@media (max-width: 694px) {
   .cover__link {
     padding: 10vw 12.80vw;
   }
@@ -35,7 +36,7 @@
   .cover__link {
     padding: 10vw 12.80vw;
   }
-  }
+  }*/
 
 @media (max-width: 320px) {
   .cover__link {

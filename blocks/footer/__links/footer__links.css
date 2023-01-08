@@ -1,6 +1,6 @@
 .footer__links {
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
@@ -12,8 +12,8 @@
 @media (max-width: 715px) {
   .footer__links {
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
+    /*flex-wrap: wrap;*/
+    /*align-content: space-between;*/
     margin: 0;
     flex-wrap: wrap;
   }
@@ -29,14 +29,14 @@
   }
   }*/
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
 .footer__links {
-  flex-direction: column;
-  justify-items: flex-start;
+  /*flex-direction: column; no need bc 715*/
+  /*justify-items: flex-start;
   align-content: flex-start;
   align-self: flex-start;
   flex-wrap: wrap;
 }
-}
+} no point now*/
 
 

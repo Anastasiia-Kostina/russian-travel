@@ -20,7 +20,7 @@
   .place__website {
     justify-content: flex-end;
     align-self: end;
-    min-height: auto;
+    min-height: 46px; /*better than auto*/
   }
   }
 
