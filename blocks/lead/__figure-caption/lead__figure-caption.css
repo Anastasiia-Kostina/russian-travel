@@ -13,6 +13,12 @@
   color: #FFFFFF;
 }
 
+@media (min-width: 1281px) {
+  .lead__figure-caption {
+    font-size: 0.78vw;
+  }
+}
+
 @media (max-width: 768px) {
   .lead__figure-caption {
     margin-left: 24px;

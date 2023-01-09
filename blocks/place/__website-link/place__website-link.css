@@ -12,4 +12,9 @@
   color: #FFFFFF;
 }
 
+@media (min-width: 1281px) {
+  .place__website-link {
+    font-size: 1.41vw;
+  }
+}
 

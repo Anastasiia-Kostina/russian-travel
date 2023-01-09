@@ -13,6 +13,12 @@
   margin-right: 0;
 }
 
+@media (min-width: 1281px) {
+  .footer__link {
+    font-size: 1.25vw;
+  }
+}
+
 @media (max-width: 768px) {
 .footer__link:nth-last-of-type(1) {
   margin-right: 18px;

@@ -9,6 +9,12 @@
   text-decoration: none;
 }
 
+@media (min-width: 1281px) {
+  .menu__lang-link {
+    font-size: 1.88vw;
+  }
+}
+
 .menu__lang-link::after {
   content: "";
   display: block;

@@ -18,11 +18,18 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.6; /*1.63 doesn't work properly*/
+  line-height: 1.61; /*1.63 doesn't work properly mb b/c of the gap
+  between the paragraphs*/
   color: #FFFFFF;
   text-align: start;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media (min-width: 1281px) {
+  .place__paragraphs {
+    font-size: 1.41vw;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -37,7 +44,6 @@
     min-width: 288px;
     max-width: 45.83vw;
     font-size: 16px;
-    line-height: 1.61;
   }
   }
 

@@ -11,6 +11,12 @@
   min-width: 306px;
 }
 
+@media (min-width: 1281px) {
+  .cover__subtitle {
+    font-size: 1.41vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .cover__subtitle {
     -webkit-box-pack: center;
