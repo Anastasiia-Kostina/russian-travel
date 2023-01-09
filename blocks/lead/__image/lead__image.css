@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center center;
   object-position: center center;
 }

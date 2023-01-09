@@ -1,12 +1,19 @@
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   min-width: 90vw;
   max-width: 92.5vw;
   min-height: 42px;
   margin: 28px auto 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -24,7 +31,7 @@
 
 @media (max-width: 320px) {
   .header {
-    max-width: 288px; /*works better than 90vw for smaller screens but the consistence...*/
+    max-width: 288px;
     margin: 16px 16px 0;
     min-width: 10vw;
   }

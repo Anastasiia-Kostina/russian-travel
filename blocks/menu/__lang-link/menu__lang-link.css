@@ -15,6 +15,8 @@
   width: 0%;
   height: 2px;
   background-color: #FFFFFF;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
@@ -46,19 +48,6 @@
   height: 2px;
   background-color: #FFFFFF;
 }
-
-/*@media (max-width: 425px) {
-  .menu__lang-link {
-    top: 0;
-    font-size: 1.125rem;
-    line-height: 1.1;
-  }
-
-  .menu__lang-link_active {
-    top: 0;
-    margin: auto 0 4px;
-  }
-} no need now*/
 
 @media (max-width: 320px) {
   .menu__lang-link {

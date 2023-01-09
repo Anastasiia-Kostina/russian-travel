@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   min-width: 720px;
-  max-width: 56.25vw; /*from 1280*/
+  max-width: 56.25vw;
   word-break: break-word;
   font-style: normal;
   font-weight: 900;
@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .lead__title {
-    min-width: 10vw; /*I put 10vw instead of 614px and don't need 425 and 656*/
+    min-width: 10vw;
     font-size: 12.5vw;
   }
   }
@@ -36,6 +36,6 @@
   .lead__title {
     line-height: 1.1;
     max-width: 90vw;
-    font-size: 40px; /*OK font-size: 12.5vw;*/
+    font-size: 40px;
   }
   }

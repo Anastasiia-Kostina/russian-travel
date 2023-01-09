@@ -3,39 +3,22 @@
   top: 0;
   left: 0;
   margin: 64px auto 0;
-  /*max-width: 100vw;*/
   text-align: left;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
 .lead__figure-container {
     margin: 56px auto 0;
-    /*min-width: 87.63vw; /*не особо влияет*/
-    /*max-width: 90.63vw;*/
   }
   }
 
 @media (max-width: 768px) {
   .lead__figure-container {
     margin: 56px auto 0;
-    /*max-width: 100vw;*/
     }
     }
-
-/*@media (max-width: 656px) {
-.lead__figure-container {
-    margin: 50px auto 0;
-    max-width: 100vw;
-  }
-  }
-
-@media (max-width: 544px) {
-.lead__figure-container {
-    margin: 46px auto 0;
-    max-width: 100vw;
-  }
-  } No need now*/
 
 @media (max-width: 320px) {
 .lead__figure-container {

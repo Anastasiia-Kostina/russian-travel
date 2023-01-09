@@ -1,5 +1,4 @@
 .lead__subtitle {
-  display: block;
   margin: 32px auto 0;
   padding: 0;
   min-width: 50vw;
@@ -8,22 +7,13 @@
   word-break: break-word;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.34vw; /*for 1281*/
+  font-size: 2.34vw;
   line-height: 1.2;
   text-align: center;
   color: #FFFFFF;
 }
 
-/*@media (min-width: 1281px) {
-  .lead__subtitle {
-    margin: 32px auto 0;
-    max-width: 50vw;
-    min-width: 640px;
-    font-size: 2.34vw;
-  }
-  }*/
-
-@media (max-width: 1024px) { /*a bit out of perfpix*/
+@media (max-width: 1024px) {
   .lead__subtitle {
     margin: 32px auto 0;
     min-width: 640px;
@@ -36,42 +26,25 @@
   .lead__subtitle {
   margin: 32px auto 0;
   min-width: 508px;
-  max-width: 83.33vw; /*640px*/
-  font-size: 30px; /*3.91vw;*/
+  max-width: 83.33vw;
+  font-size: 30px;
   }
 }
 @media (max-width: 656px) {
 .lead__subtitle {
   margin: 24px auto 0;
-  max-width: 77.21vw; /*508px*/
-  min-width: 288px; /*no 425 so not 314px*/
-  font-size: 4.6vw; /*no 425 so not 4vw*/
+  max-width: 77.21vw;
+  min-width: 288px;
+  font-size: 4.6vw;
 }
 }
-
-/*@media (max-width: 425px) {
-  .lead__subtitle {
-    margin: 20px auto 0;
-    max-width: 85.21vw; /*364px*/
-    /*min-width: 288px;
-    font-size: 4.2vw;
-  }
-  }*/
 
 @media (max-width: 320px) {
 .lead__subtitle {
   margin: 16px auto 0;
   min-width: 10vw;
   max-width: 90vw;
-  /*OK font-size: 5vw;*/
   font-size: 16px;
   line-height: 1.25;
 }
 }
-
-/*@media (min-width: 1280px) {
-.lead__subtitle {
-  width: calc(100% - 35%);
-  margin: 2rem auto 4rem;
-}
-}*/

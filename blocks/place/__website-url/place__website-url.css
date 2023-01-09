@@ -9,16 +9,3 @@
   letter-spacing: 2px;
   color: #AAAAAA;
 }
-
-/*@media (max-width: 1024px) {
-  .place__website-url {
-    font-size: 0.75rem;
-    line-height: 1;
-  }
-  }
-
-@media (max-width: 768px) {
-  .place__website-url {
-    font-size: 0.73rem;
-  }
-}*/

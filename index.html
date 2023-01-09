@@ -1,4 +1,12 @@
-<!---->
+<!--Здравствуйте! С наступившим, надеюсь, скоро мирным годом!
+Постаралась переделать сие творение (кажется, написать заново
+с нуля было бы проще). Максимально сокращала кол-во брейкпоинтов, убрала rem,
+постаралась соблюсти единообразие кода (но боюсь, где-то замылившийся
+глаз упустил ненужные px вместо vw и наоборот). Ещё с 1119px в респонсиве,
+если проверять увеличивая по 1px, начинается "аквадискотека" из-за зума
+(не уверена дело в экране или коде); текст в places на PerfectPixel совпадает
+не всегда, но старалась адаптировать чтобы в большинстве брейкпоинтов совпадал.
+ Готова активно исправлять)-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -25,20 +33,20 @@
   оптимизация сайта, разные экраны, страница сайта, гриды, грид-контейнер">
   <meta name="author" content="Анастасия Костина">
 </head>
-<body class="page ">
-  <header class="header ">
-      <div class="header__logo "></div>
+<body class="page">
+  <header class="header">
+      <div class="header__logo"></div>
       <ul class="menu ">
-        <li><a class="menu__lang-link menu__lang-link_active link-transition " lang="ru" href="#">Ru</a></li>
-        <li><a class="menu__lang-link link-transition " lang="en" href="#">En</a></li>
+        <li><a class="menu__lang-link menu__lang-link_active link-transition" lang="ru" href="#">Ru</a></li>
+        <li><a class="menu__lang-link link-transition" lang="en" href="#">En</a></li>
       </ul>
   </header>
   <main class="content">
-    <section class="lead ">
-        <h1 class="lead__title ">Путешествия по&nbsp;России</h1>
-        <p class="lead__subtitle ">Настоящая страна не&nbsp;в&nbsp;выпусках
+    <section class="lead">
+        <h1 class="lead__title">Путешествия по&nbsp;России</h1>
+        <p class="lead__subtitle">Настоящая страна не&nbsp;в&nbsp;выпусках
           новостей, а&nbsp;здесь.</p>
-        <figure class="lead__figure-container"> <!--You've forgotten index css Attention-->
+        <figure class="lead__figure-container">
           <picture class="lead__image">
             <source media="(max-width: 1280px)"
             srcset="./images/1280_lead-polka.jpg">
@@ -58,7 +66,7 @@
       <article class="intro__container">
         <h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
         <p class="intro__text">По&nbsp;опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но&nbsp;только&nbsp;36% планируют провести отпуск в&nbsp;родной стране. Мол, чего мы&nbsp;тут, дома, не&nbsp;видели?&nbsp;На самом деле, Россия&nbsp;&mdash; это целая вселенная с&nbsp;ласковым морем юга, густыми лесами Саян и&nbsp;суровыми льдами плато Путорана. А&nbsp;ещё увидеть все эти красоты можно без миллионов&nbsp;на&nbsp;счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова&nbsp;&mdash; смелая молодая мама, которая взяла в&nbsp;охапку троих детей, усадила&nbsp;их в свою &laquo;Ладу&raquo; и&nbsp;проехала 20&nbsp;тысяч километров по&nbsp;родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
-        </p> <!--320 можно без, по родной, мы(я и все мои я) выбрали и не влезают, сделала выбор в пользу правильных др. размеров-->
+        </p>
         <ul class="intro__list">
           <li class="intro__list-item">Часовых поясов
             <span class="intro__span-accent">11</span>
@@ -226,17 +234,17 @@
         </picture>
       </div>
     </section> <!--//section photo-grid-->
-    <section class="places ">
-        <article class="place ">
-          <h2 class="place__title ">Куршская коса</h2>
-          <div class="place__website ">
-            <p class="place__website-url ">URL</p> <!--not h3 b/c of the default styles-->
+    <section class="places">
+        <article class="place">
+          <h2 class="place__title">Куршская коса</h2>
+          <div class="place__website">
+            <p class="place__website-url">URL</p>
             <a href="http://park-kosa.ru"
-            target="_blank" class="place__website-link link-transition ">
+            target="_blank" class="place__website-link link-transition">
               park-kosa.ru
             </a>
           </div>
-          <picture class="place__image ">
+          <picture class="place__image">
             <source media="(max-width: 1280px)"
             srcset="./images/1280_place-kosa.jpg">
             <source media="(max-width: 1024px)"
@@ -248,27 +256,26 @@
             <img src="./images/1280_place-kosa.jpg" alt="Фото Куршской косы"
             class="place__image">
           </picture>
-          <div class="place__paragraphs ">
-            <p class="place__paragraphs place__paragraphs_top ">Здесь, посреди лесов и&nbsp;песчаных дюн,&nbsp;вы сможете увидеть два водных горизонта&nbsp;&mdash; спокойного Куршского залива с&nbsp;одной стороны и&nbsp;подёрнутого рябью волн Балтийского моря с&nbsp;другой. Уникальная природная зона на&nbsp;краю российского анклава.
+          <div class="place__paragraphs">
+            <p class="place__paragraphs place__paragraphs_top">Здесь, посреди лесов и&nbsp;песчаных дюн,&nbsp;вы сможете увидеть два водных горизонта&nbsp;&mdash; спокойного Куршского залива с&nbsp;одной стороны и&nbsp;подёрнутого рябью волн Балтийского моря с&nbsp;другой. Уникальная природная зона на&nbsp;краю российского анклава.
             </p>
-            <p class="place__paragraphs place__paragraphs_bottom ">На&nbsp;этом&nbsp;Калининградская&nbsp;область не заканчивается&nbsp;. Для&nbsp;путешественника
+            <p class="place__paragraphs place__paragraphs_bottom">На&nbsp;этом&nbsp;Калининградская&nbsp;область не заканчивается&nbsp;. Для&nbsp;путешественника
               и&nbsp;исследователя&nbsp;там же по&nbsp;соседству&nbsp;— самая западная точка России, Балтийская коса,&nbsp;—
               и&nbsp;немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в&nbsp;спокойствие природы
               и&nbsp;запах стального, прохладного моря.
-
             </p>
           </div>
         </article>
-        <article class="place ">
-          <h2 class="place__title ">Кольский</h2>
-          <div class="place__website ">
-            <p class="place__website-url ">URL</p> <!--not h3 b/c of the default styles-->
+        <article class="place">
+          <h2 class="place__title">Кольский</h2>
+          <div class="place__website">
+            <p class="place__website-url">URL</p>
             <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
-            target="_blank" class="place__website-link link-transition ">
+            target="_blank" class="place__website-link link-transition">
             National Geographic
           </a>
           </div>
-          <picture class="place__image ">
+          <picture class="place__image">
             <source media="(max-width: 1280px)"
             srcset="./images/1280_place-kolsky.jpg">
             <source media="(max-width: 1024px)"
@@ -280,23 +287,20 @@
             <img src="./images/1280_place-kolsky.jpg" alt="Фото Кольский полуостров"
             class="place__image">
           </picture>
-          <div class="place__paragraphs ">
-            <p class="place__paragraphs place__paragraphs_top ">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от&nbsp;которой на юг — тайга,&nbsp;а&nbsp;на север — Ледовитый океан, прикидывающийся Баренцевым морем.
-
-
+          <div class="place__paragraphs">
+            <p class="place__paragraphs place__paragraphs_top">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от&nbsp;которой на юг — тайга,&nbsp;а&nbsp;на север — Ледовитый океан, прикидывающийся Баренцевым морем.
             </p>
-            <p class="place__paragraphs place__paragraphs_bottom ">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля
+            <p class="place__paragraphs place__paragraphs_bottom">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля
               в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об&nbsp;уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас&nbsp;давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в&nbsp;Мурманск.
-
             </p>
           </div>
         </article>
-        <article class="place ">
-          <h2 class="place__title ">Алтай</h2>
-          <div class="place__website ">
-            <p class="place__website-url ">URL</p> <!--not h3 b/c of the default styles-->
+        <article class="place">
+          <h2 class="place__title">Алтай</h2>
+          <div class="place__website">
+            <p class="place__website-url">URL</p>
             <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ"
-            target="_blank" class="place__website-link link-transition ">
+            target="_blank" class="place__website-link link-transition">
             YouTube
           </a>
           </div>
@@ -319,16 +323,16 @@
             </p>
           </div>
         </article>
-        <article class="place ">
-          <h2 class="place__title ">Зимний Байкал</h2>
-          <div class="place__website ">
-            <p class="place__website-url ">URL</p> <!--not h3 b/c of the default styles-->
+        <article class="place">
+          <h2 class="place__title">Зимний Байкал</h2>
+          <div class="place__website">
+            <p class="place__website-url">URL</p>
             <a href="https://vk.com/baikalmile"
-            target="_blank" class="place__website-link link-transition ">
+            target="_blank" class="place__website-link link-transition">
             https://vk.com/baikalmile
           </a>
           </div>
-          <picture class="place__image ">
+          <picture class="place__image">
             <source media="(max-width: 1280px)"
             srcset="./images/1280_place-winter-baikal.jpg">
             <source media="(max-width: 1024px)"
@@ -341,22 +345,22 @@
             class="place__image">
           </picture>
           <div class="place__paragraphs">
-            <p class="place__paragraphs place__paragraphs_top ">Всем известен Байкал как крупнейшее озеро в&nbsp;мире.&nbsp;Многие также знают, что это самый большой источник пресной воды&nbsp;и одно из&nbsp;красивейших мест в&nbsp;России.
+            <p class="place__paragraphs place__paragraphs_top">Всем известен Байкал как крупнейшее озеро в&nbsp;мире.&nbsp;Многие также знают, что это самый большой источник пресной воды&nbsp;и одно из&nbsp;красивейших мест в&nbsp;России.
             </p>
-            <p class="place__paragraphs place__paragraphs_bottom ">Конечно, это всё так. Но Байкал ещё идеальное место&nbsp;для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу,&nbsp;и тандем старается развить как&nbsp;можно бóльшую скорость на&nbsp;льду.&nbsp;В марте 2019 года на фестивале «Байкальская миля»&nbsp;был поставлен мировой рекорд — 197.011 км/ч.
+            <p class="place__paragraphs place__paragraphs_bottom">Конечно, это всё так. Но Байкал ещё идеальное место&nbsp;для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу,&nbsp;и тандем старается развить как&nbsp;можно бóльшую скорость на&nbsp;льду.&nbsp;В марте 2019 года на фестивале «Байкальская миля»&nbsp;был поставлен мировой рекорд — 197.011 км/ч.
             </p>
           </div>
         </article>
-        <article class="place ">
-          <h2 class="place__title ">Карелия</h2>
+        <article class="place">
+          <h2 class="place__title">Карелия</h2>
           <div class="place__website ">
-            <p class="place__website-url ">URL</p> <!--not h3 b/c of the default styles-->
+            <p class="place__website-url">URL</p>
             <a href="http://vodlozero.ru"
-            target="_blank" class="place__website-link link-transition ">
+            target="_blank" class="place__website-link link-transition">
             http://vodlozero.ru/
           </a>
           </div>
-          <picture class="place__image ">
+          <picture class="place__image">
             <source media="(max-width: 1280px)"
             srcset="./images/1280_place-karelia.jpg">
             <source media="(max-width: 1024px)"
@@ -368,12 +372,11 @@
             <img src="./images/1280_place-karelia.jpg" alt="Фото Карелия"
             class="place__image">
           </picture>
-          <div class="place__paragraphs ">
-            <p class="place__paragraphs place__paragraphs_top ">Сибирь заканчивается не на Урале,
+          <div class="place__paragraphs">
+            <p class="place__paragraphs place__paragraphs_top">Сибирь заканчивается не на Урале,
               а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает
               на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце&nbsp;раньше, чем увидал его Иван Грозный. В&nbsp;девственном лесу на сотню километров не встретишь тропы.
               А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.
-
             </p>
           </div>
         </article>

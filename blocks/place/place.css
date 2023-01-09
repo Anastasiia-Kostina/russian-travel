@@ -1,43 +1,61 @@
 .place {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 35.94vw minmax(min-content, 1fr); /*if I count 46.75vw*/
+  -ms-grid-columns: 35.94vw 40px minmax(-webkit-min-content, 1fr);
+  -ms-grid-columns: 35.94vw 40px minmax(min-content, 1fr);
+  grid-template-columns: 35.94vw minmax(-webkit-min-content, 1fr);
+  grid-template-columns: 35.94vw minmax(min-content, 1fr);
+  -ms-grid-rows: minmax(-webkit-min-content, 1fr);
+  -ms-grid-rows: minmax(min-content, 1fr);
+  grid-template-rows: minmax(-webkit-min-content, 1fr);
   grid-template-rows: minmax(min-content, 1fr);
   grid-template-areas:
     "title website"
     "image paragraphs";
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
   column-gap: 40px;
   row-gap: 48px;
   margin: 0;
   padding: 0;
   max-width: 76.88vw;
-  /*min-height: 584px;*/ /*I hate this part at it took me 2 hrs to realize why 1024 went wrong!*/
-  /*object-fit: cover;
-  object-position: center;*/
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
   .place {
+    -ms-grid-columns: 42.97vw 32px minmax(-webkit-min-content, 1fr);
+    -ms-grid-columns: 42.97vw 32px minmax(min-content, 1fr);
+    grid-template-columns: 42.97vw minmax(-webkit-min-content, 1fr);
     grid-template-columns: 42.97vw minmax(min-content, 1fr);
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
     column-gap: 32px;
     max-width: 90.63vw;
-    /*min-height: 564px;*/
   }
   }
 
 @media (max-width: 768px) {
 .place {
+  -ms-grid-columns: 44.27vw 28px minmax(-webkit-min-content, 1fr);
+  -ms-grid-columns: 44.27vw 28px minmax(min-content, 1fr);
+  grid-template-columns: 44.27vw minmax(-webkit-min-content, 1fr);
   grid-template-columns: 44.27vw minmax(min-content, 1fr);
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
   column-gap: 28px;
   max-width: 93.75vw;
-  /*min-height: auto;*/
 }
 }
 
 @media (max-width: 656px) {
   .place {
+    -ms-grid-columns: minmax(-webkit-min-content, 1fr);
+    -ms-grid-columns: minmax(min-content, 1fr);
+    grid-template-columns: minmax(-webkit-min-content, 1fr);
     grid-template-columns: minmax(min-content, 1fr);
-    /*grid-template-rows: min-content;*/
+    -ms-grid-rows: auto 32px auto 32px auto 32px auto;
     grid-template-areas:
       "title"
       "website"
@@ -45,37 +63,17 @@
       "paragraphs";
     row-gap: 32px;
     max-width: 92.99vw;
-    /*min-height: auto;*/
   }
   }
 
 @media (max-width: 425px) {
   .place {
-    /*grid-template-columns: minmax(min-content, 100%);
-    grid-template-rows: min-content;
-    grid-template-areas:
-      "title"
-      "website"
-      "image"
-      "paragraphs";
-    row-gap: 32px; no need bc 656*/
     max-width: 100vw;
-    /*min-height: auto;*/
    }
   }
 
 @media (max-width: 320px) {
   .place {
-    /*grid-template-columns: minmax(min-content, 100%);*/
-    /*grid-template-rows: min-content;
-    grid-template-areas:
-        "title"
-        "website"
-        "image"
-        "paragraphs"; no need bc 656*/
     min-width: 288px;
-    /*max-width: 100vw;*/
-    /*min-height: auto;*/
-    /*row-gap: 32px;*/
   }
   }

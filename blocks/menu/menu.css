@@ -1,12 +1,17 @@
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 18px;
   position: relative;
   top: 0;
   left: 0;
-  min-width: 62px; /*Важно. Влияет на 768, 320 и пр.*/
+  min-width: 62px;
   margin: 0;
   padding: 0;
   list-style: none;

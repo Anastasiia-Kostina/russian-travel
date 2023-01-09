@@ -1,7 +1,14 @@
 .place__paragraphs {
   grid-area: paragraphs;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -12,9 +19,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6; /*1.63 doesn't work properly*/
-  /*letter-spacing: 0;*/
   color: #FFFFFF;
   text-align: start;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -38,16 +45,12 @@
   .place__paragraphs {
     margin: 0 0 0 16px;
     max-width: 92.99vw;
-    /*min-width: 300px;*/
     min-height: auto;
-    /*font-size: 16px;
-    line-height: 1.61; I have it in 768*/
   }
   }
 
 @media (max-width: 320px) {
   .place__paragraphs {
-    /*margin: 0 16px 0; no need here*/
     min-width: 280px;
     max-width: 90vw;
     font-size: 16px;

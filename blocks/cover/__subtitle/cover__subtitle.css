@@ -7,14 +7,14 @@
   word-break: break-word;
   color: #FFFFFF;
   margin: 32px auto 0;
-  /*padding: 0 100px;*/
-  /*max-width: 360px;*/ /*bad for 1281 and more*/
   max-width: 28.13vw;
   min-width: 306px;
 }
 
 @media (max-width: 1024px) {
   .cover__subtitle {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 32px auto 0;
     max-width: 360px;
@@ -37,15 +37,6 @@
     line-height: 1.14;
   }
   }
-
-/*@media (max-width: 656px) {
-  .cover__subtitle {
-  font-size: 16px;
-  line-height: 1.14;
-  margin: 24px auto 0;
-  min-width: 10vw;
-  }
-  } ok no need here*/
 
 @media (max-width: 320px) {
   .cover__subtitle {

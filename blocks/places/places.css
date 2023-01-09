@@ -1,25 +1,31 @@
 .places {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: minmax(-webkit-min-content, 1fr);
+  -ms-grid-columns: minmax(min-content, 1fr);
+  grid-template-columns: minmax(-webkit-min-content, 1fr);
   grid-template-columns: minmax(min-content, 1fr);
+  -ms-grid-rows: minmax(-webkit-min-content, 1fr);
+  -ms-grid-rows: minmax(min-content, 1fr);
+  grid-template-rows: minmax(-webkit-min-content, 1fr);
   grid-template-rows: minmax(min-content, 1fr);
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
-  /*align-content: space-between; not here*/
-  /*justify-items: start;
-  align-items: end; not here*/
   gap: 80px;
-  /*margin: 0 auto;*/
   margin: 92px auto 0;
   padding: 0;
   min-width: 920px;
   max-width: 76.88vw;
-  /*object-fit: cover;
-  object-position: center; not here*/
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}.places > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
 }
 
 @media (max-width: 1024px) {
   .places {
-    /*margin: 92px auto 0; not here*/
     max-width: 90.63vw;
     min-width: 710px;
   }
@@ -27,7 +33,7 @@
 
 @media (max-width: 768px) {
   .places {
-    gap: 73px; /*but they are different there 72, 73*/
+    gap: 73px;
     min-width: 320px;
     max-width: 93.75vw;
     margin: 88px auto 0 24px;
@@ -54,10 +60,7 @@
 
 @media (max-width: 320px) {
 .places {
-  /*gap: 50px;
-  max-width: 320px; no need as 425*/
   margin: 64px 0 0;
-  /*min-width: 288px; no need as 425*/
 }
 }
 

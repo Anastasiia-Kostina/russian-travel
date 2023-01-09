@@ -1,12 +1,20 @@
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 92px auto 24px;
   padding: 0;
   max-width: 92.50vw;
   min-width: 920px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -27,21 +35,23 @@
 
 @media (max-width: 715px) {
   .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    /*justify-items: flex-start; no need for it here*/
-    align-items: flex-start; /*Important*/
-    /*flex-wrap: wrap;*/
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin: 64px auto 24px 20px;
-    /*max-width: 58.13vw;*/
     max-width: 61.18vw;
   }
   }
 
 @media (max-width: 320px) {
 .footer {
-  /*flex-direction: column;
-  justify-items: flex-start; no need bc 715*/
+  -ms-flex-line-pack: justify;
   align-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 64px auto 24px 16px;
   max-width: 61.13vw;

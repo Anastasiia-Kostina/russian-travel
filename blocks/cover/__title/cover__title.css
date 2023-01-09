@@ -9,10 +9,8 @@
   color: #FFFFFF;
   margin: 0 auto;
   padding: 0;
-  /*max-width: 560px;*/ /*bad for 1281 and more*/
   max-width: 43.75vw;
   min-width: 506px;
-  /*z-index: 1;*/
 }
 
 @media (max-width: 1024px) {
@@ -24,35 +22,15 @@
 
 @media (max-width: 768px) {
   .cover__title {
-    /*min-width: 10vw;*/
     max-width: 560px;
     font-size: 9.38vw;
     min-width: 37.50vw;
-    /*margin: 4px 1px; wait for the sub-t*/
-    /*padding: 0 1.52px;*/
   }
   }
-
-/*@media (max-width: 694px) {
-  .cover__title {
-    font-size: 44px;
-    line-height: 1.09;
-    margin: 0 auto;
-    min-width: 306px;
-  }
-  }
-
-@media (max-width: 425px) {
-  .cover__title {
-    font-size: 34px;
-    min-width: 10vw;
-  }
-  }*/
 
 @media (max-width: 320px) {
 .cover__title {
   font-size: 32px;
   min-width: 288px;
-  /*line-height: 1.09;*/
 }
 }
