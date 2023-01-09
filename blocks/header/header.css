@@ -9,18 +9,12 @@
   -ms-flex-align: end;
   align-items: flex-end;
   min-width: 90vw;
-  max-width: 92.5vw;
+  max-width: calc(100% - 96px);
   min-height: 42px;
   margin: 28px auto 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-@media (max-width: 1024px) {
-  .header {
-    max-width: 90.625vw;
-  }
 }
 
 @media (max-width: 768px) {

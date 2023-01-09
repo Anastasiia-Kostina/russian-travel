@@ -19,9 +19,6 @@
 @media (min-width: 1281px) {
   .photo-grid__items {
   grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
-  -ms-grid-rows: minmax(-webkit-min-content, 1fr) 16px minmax(-webkit-min-content, 1fr) 16px minmax(-webkit-min-content, 1fr);
-  -ms-grid-rows: minmax(min-content, 1fr) 16px minmax(min-content, 1fr) 16px minmax(min-content, 1fr);
-  grid-template-rows: repeat(3, minmax(min-content, 1fr));
   }
 }
 

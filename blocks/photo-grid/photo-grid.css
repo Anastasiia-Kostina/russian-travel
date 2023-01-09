@@ -1,7 +1,7 @@
 .photo-grid {
   margin: 92px 48px 0;
   padding: 0;
-  max-width: 92.50vw;
+  max-width: calc(100% - 96px);
   min-width: 72vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -16,7 +16,6 @@
 
 @media (max-width: 1024px) {
 .photo-grid {
-  max-width: 90.63vw;
   min-width: 70.31vw;
 }
 }
@@ -33,7 +32,6 @@
   .photo-grid {
     margin: 80px 18px 0;
     max-width: 93vw;
-    min-width: 288px;
   }
   }
 

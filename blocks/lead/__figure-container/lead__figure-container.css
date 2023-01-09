@@ -14,12 +14,6 @@
   }
   }
 
-@media (max-width: 768px) {
-  .lead__figure-container {
-    margin: 56px auto 0;
-    }
-    }
-
 @media (max-width: 320px) {
 .lead__figure-container {
     margin: 40px 0 0;

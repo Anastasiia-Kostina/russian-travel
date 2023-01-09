@@ -1,4 +1,8 @@
 .cover__title {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 43.75vw;
+  min-width: 506px;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -7,10 +11,6 @@
   text-align: center;
   word-break: break-word;
   color: #FFFFFF;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 43.75vw;
-  min-width: 506px;
 }
 
 @media (min-width: 1281px) {

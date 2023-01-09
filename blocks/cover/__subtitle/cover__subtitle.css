@@ -1,4 +1,7 @@
 .cover__subtitle {
+  margin: 32px auto 0;
+  max-width: 28.13vw;
+  min-width: 306px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -6,9 +9,6 @@
   text-align: center;
   word-break: break-word;
   color: #FFFFFF;
-  margin: 32px auto 0;
-  max-width: 28.13vw;
-  min-width: 306px;
 }
 
 @media (min-width: 1281px) {
