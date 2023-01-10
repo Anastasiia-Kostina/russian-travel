@@ -30,8 +30,8 @@
 
 @media (max-width: 656px) {
   .photo-grid {
-    margin: 80px 18px 0;
-    max-width: 93vw;
+    margin: 80px auto 0;
+    max-width: 89.6vw;
   }
   }
 

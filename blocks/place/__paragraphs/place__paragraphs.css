@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.61; /*1.63 doesn't work properly mb b/c of the gap
+  line-height: 1.6; /*1.63 doesn't work properly mb b/c of the inconsistent gap
   between the paragraphs*/
   color: #FFFFFF;
   text-align: start;
@@ -35,15 +35,17 @@
 @media (max-width: 1024px) {
   .place__paragraphs {
     min-width: 350px;
-    max-width: 44.53vw;
+    max-width: 100%;
+    line-height: 1.62;
   }
   }
 
 @media (max-width: 768px) {
   .place__paragraphs {
     min-width: 288px;
-    max-width: 45.83vw;
+    max-width: 100%;
     font-size: 16px;
+    line-height: 1.62;
   }
   }
 
@@ -59,7 +61,5 @@
   .place__paragraphs {
     min-width: 280px;
     max-width: 90vw;
-    font-size: 16px;
-    line-height: 1.62;
   }
   }

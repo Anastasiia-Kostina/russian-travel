@@ -18,7 +18,7 @@
   row-gap: 48px;
   margin: 0;
   padding: 0;
-  max-width: 76.88vw;
+  max-width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -32,7 +32,6 @@
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
     column-gap: 32px;
-    max-width: 90.63vw;
   }
   }
 
@@ -45,7 +44,6 @@
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
-  max-width: 93.75vw;
 }
 }
 
@@ -62,18 +60,11 @@
       "image"
       "paragraphs";
     row-gap: 32px;
-    max-width: 92.99vw;
   }
-  }
-
-@media (max-width: 425px) {
-  .place {
-    max-width: 100vw;
-   }
   }
 
 @media (max-width: 320px) {
   .place {
-    min-width: 288px;
+    min-width: 90vw;
   }
   }
