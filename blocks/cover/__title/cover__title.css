@@ -15,20 +15,18 @@
 
 @media (min-width: 1281px) {
   .cover__title {
-    font-size: 5.63vw;
+    font-size: 5.2vw;
   }
 }
 
 @media (max-width: 1024px) {
   .cover__title {
     max-width: 560px;
-    min-width: 506px;
   }
   }
 
 @media (max-width: 768px) {
   .cover__title {
-    max-width: 560px;
     font-size: 9.38vw;
     min-width: 37.50vw;
   }

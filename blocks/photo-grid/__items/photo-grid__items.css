@@ -18,7 +18,7 @@
 
 @media (min-width: 1281px) {
   .photo-grid__items {
-  grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
   }
 }
 

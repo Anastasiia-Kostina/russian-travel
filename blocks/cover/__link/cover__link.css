@@ -13,6 +13,12 @@
   background: rgba(42, 44, 47, 0.8);
 }
 
+@media (min-width: 1281px) {
+  .cover__link {
+    padding: 245px 312px;
+  }
+}
+
 @media (max-width: 1024px) {
   .cover__link {
     padding: 19.04vw 15.66vw; /*works better than 22.66*/

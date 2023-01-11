@@ -19,10 +19,6 @@
 
 @media (max-width: 1024px) {
   .cover__subtitle {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 32px auto 0;
     max-width: 360px;
   }
   }
@@ -30,9 +26,7 @@
 @media (max-width: 768px) {
   .cover__subtitle {
     min-width: 240px;
-    max-width: 360px;
     margin: 4.17vw auto 0;
-    font-size: 18px;
   }
   }
 
@@ -46,10 +40,10 @@
 
 @media (max-width: 320px) {
   .cover__subtitle {
-  font-size: 14px;
-  line-height: 1.14;
   margin: 16px 0 0;
   padding: 0;
   min-width: 288px;
+  font-size: 14px;
+  line-height: 1.14;
   }
   }

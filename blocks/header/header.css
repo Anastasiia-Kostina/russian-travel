@@ -17,6 +17,13 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1281px) {
+  .header {
+    min-width: calc(100% - 96px); /*здесь max-width 1280 не переходит в min-width 1281 как в inter__container*/
+    max-width: 72.50vw;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     max-width: 93.75vw;
@@ -25,8 +32,8 @@
 
 @media (max-width: 320px) {
   .header {
-    max-width: 288px;
     margin: 16px 16px 0;
     min-width: 10vw;
+    max-width: 288px;
   }
 }

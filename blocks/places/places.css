@@ -23,45 +23,41 @@
 
 @media (max-width: 1024px) {
   .places {
-    max-width: 90.63vw;
     min-width: 710px;
+    max-width: 90.63vw;
   }
   }
 
 @media (max-width: 768px) {
   .places {
-    gap: 72px;
+    gap: 73px;
+    margin: 88px auto 0 24px;
     min-width: 320px;
     max-width: 93.75vw;
-    margin: 88px auto 0 24px;
-  }
-
-  .places:nth-last-of-type(1) {
-    gap: 73px;
   }
 }
 
 @media (max-width: 656px) {
   .places {
-    margin: 80px auto 0;
-    max-width: 89.63vw;
-    min-width: 280px;
     gap: 64px;
+    margin: 80px auto 0;
+    min-width: 280px;
+    max-width: 89.63vw;
   }
   }
 
 @media (max-width: 425px) {
   .places {
     gap: 50px;
-    max-width: 100vw;
     margin: 72px 0 0;
     min-width: 288px;
+    max-width: 100vw;
   }
   }
 
 @media (max-width: 320px) {
-.places {
-  margin: 64px 0 0;
-}
-}
+  .places {
+    margin: 64px 0 0;
+  }
+  }
 

@@ -1,0 +1,18 @@
+.menu__lang-link_active {
+  margin: 2px 0 4px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: fit-content;
+}
+
+.menu__lang-link_active::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}

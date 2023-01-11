@@ -28,16 +28,14 @@
 @media (max-width: 768px) {
   .intro__container {
     margin: 0 24px;
-    max-width: 93.75vw;
     min-width: 288px;
+    max-width: 93.75vw;
   }
 }
 
 @media (max-width: 320px) {
-.intro__container {
-  margin: 0 16px;
-  max-width: 288px;
-  min-width: 10vw;
-  min-height: 754px;
-}
-}
+  .intro__container {
+    margin: 0 16px;
+    min-height: 754px;
+  }
+  }

@@ -12,6 +12,12 @@
   color: #FFFFFF;
 }
 
+@media (min-width: 1281px) {
+  .lead__subtitle {
+    min-width: 40vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .lead__subtitle {
     min-width: 640px;
@@ -24,24 +30,24 @@
   .lead__subtitle {
   min-width: 508px;
   max-width: 83.33vw;
-  font-size: 30px;
   }
 }
+
 @media (max-width: 656px) {
-.lead__subtitle {
-  margin: 24px auto 0;
-  max-width: 77.21vw;
-  min-width: 288px;
-  font-size: 4.6vw;
-}
-}
+  .lead__subtitle {
+    margin: 24px auto 0;
+    min-width: 288px;
+    max-width: 77.21vw;
+    font-size: 4.6vw;
+  }
+  }
 
 @media (max-width: 320px) {
-.lead__subtitle {
-  margin: 16px auto 0;
-  min-width: 10vw;
-  max-width: 90vw;
-  font-size: 16px;
-  line-height: 1.25;
-}
-}
+  .lead__subtitle {
+    margin: 16px auto 0;
+    min-width: 10vw;
+    max-width: 90vw;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  }

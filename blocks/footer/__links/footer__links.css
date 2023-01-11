@@ -21,9 +21,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0;
     min-width: 58.13vw;
   }
   }

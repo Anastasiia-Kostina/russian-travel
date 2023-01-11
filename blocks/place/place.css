@@ -23,6 +23,15 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1281px) {
+  .place {
+    -ms-grid-columns: 35.94% minmax(-webkit-min-content, 1fr);
+    -ms-grid-columns: 35.94% minmax(min-content, 1fr);
+    grid-template-columns: 35.94% minmax(-webkit-min-content, 1fr);
+    grid-template-columns: 35.94% minmax(min-content, 1fr);
+  }
+  }
+
 @media (max-width: 1024px) {
   .place {
     -ms-grid-columns: 42.97vw 32px minmax(-webkit-min-content, 1fr);

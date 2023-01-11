@@ -11,9 +11,9 @@
   position: relative;
   top: 0;
   left: 0;
-  min-width: 62px;
   margin: 0;
   padding: 0;
+  min-width: 62px;
   list-style: none;
 }
 

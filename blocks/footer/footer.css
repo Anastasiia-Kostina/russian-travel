@@ -18,6 +18,12 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1281px) {
+  .footer {
+    max-width: 92.50vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer {
     min-width: 700px;

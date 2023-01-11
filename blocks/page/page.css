@@ -1,8 +1,9 @@
 .page {
   min-width: 320px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Inter', Arial;
+  font-family: 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -11,5 +12,4 @@
   text-rendering: optimizeLegibility;
   color: #FFFFFF;
   background-color: #2A2C2F;
-  list-style: none;
 }

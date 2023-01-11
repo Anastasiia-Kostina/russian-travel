@@ -17,7 +17,7 @@
 @media (max-width: 320px) {
 .lead__figure-container {
     margin: 40px 0 0;
-    max-width: 100%;
     min-width: 100vw;
+    max-width: 100%;
   }
   }

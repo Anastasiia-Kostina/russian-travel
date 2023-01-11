@@ -25,9 +25,9 @@
 
 @media (max-width: 715px) {
   .footer__copyright {
+    margin: 32px 0 0;
     font-size: 14px;
     line-height: 1;
-    margin: 32px 0 0;
   }
   }
 
