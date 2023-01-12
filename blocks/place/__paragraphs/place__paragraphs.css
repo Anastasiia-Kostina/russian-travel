@@ -36,7 +36,7 @@
   .place__paragraphs {
     min-width: 350px;
     max-width: 100%;
-    line-height: 1.62;
+    line-height: 1.61;
   }
   }
 
@@ -44,6 +44,7 @@
   .place__paragraphs {
     min-width: 288px;
     font-size: 16px;
+    line-height: 1.62;
   }
   }
 
@@ -59,5 +60,6 @@
   .place__paragraphs {
     min-width: 280px;
     max-width: 90vw;
+    line-height: 1.63;
   }
   }

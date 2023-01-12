@@ -14,7 +14,9 @@
 
 @media (min-width: 1281px) {
   .lead__subtitle {
-    min-width: 40vw;
+    min-width: 29vw;
+    max-width: 36vw;
+    font-size: 2vw;
   }
 }
 
