@@ -21,6 +21,13 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1281px) {
+  .places {
+    min-width: 984px;
+    max-width: calc(100% - 296px);
+  }
+  }
+
 @media (max-width: 1024px) {
   .places {
     min-width: 710px;

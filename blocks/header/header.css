@@ -19,8 +19,8 @@
 
 @media (min-width: 1281px) {
   .header {
-    min-width: calc(100% - 96px); /*здесь max-width 1280 не переходит в min-width 1281 как в inter__container*/
-    max-width: 72.50vw;
+    min-width: 1184px;
+    max-width: calc(100% - 96px);
   }
 }
 

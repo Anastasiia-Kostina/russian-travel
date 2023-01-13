@@ -31,12 +31,6 @@
   margin-right: 0;
 }
 
-@media (min-width: 1281px) {
-  .menu__lang-link {
-    font-size: 1.88vw;
-  }
-}
-
 @media (max-width: 320px) {
   .menu__lang-link {
     font-size: 18px;

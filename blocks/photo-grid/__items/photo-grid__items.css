@@ -16,12 +16,6 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 1281px) {
-  .photo-grid__items {
-  grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
-  }
-}
-
 @media (max-width: 1024px) {
 .photo-grid__items {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

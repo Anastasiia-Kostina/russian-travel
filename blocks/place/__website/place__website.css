@@ -15,6 +15,13 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1281px) {
+  .place__website {
+    min-width: 456px;
+    max-width: 35.63%;
+  }
+  }
+
 @media (max-width: 1024px) {
   .place__website {
     -webkit-box-pack: end;

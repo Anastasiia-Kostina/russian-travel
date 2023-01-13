@@ -28,7 +28,8 @@
 
 @media (min-width: 1281px) {
   .place__paragraphs {
-    font-size: 1.41vw;
+    min-width: 49.19%;
+    max-width: 484px;
   }
 }
 
@@ -60,6 +61,6 @@
   .place__paragraphs {
     min-width: 280px;
     max-width: 90vw;
-    line-height: 1.63;
+    line-height: 1.62;
   }
   }

@@ -1,16 +1,9 @@
 .lead {
   margin: 56px 148px 0;
   padding: 0;
-  max-width: 76.88vw;
   max-width: calc(100% - 296px);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-@media (min-width: 1281px) {
-  .lead {
-    max-width: 92.50vw;
-  }
 }
 
 @media (max-width: 1024px) {

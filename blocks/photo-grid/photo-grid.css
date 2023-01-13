@@ -2,16 +2,14 @@
   margin: 92px 48px 0;
   padding: 0;
   max-width: calc(100% - 96px);
-  min-width: 72vw;
+  min-width: 72.5vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 @media (min-width: 1281px) {
 .photo-grid {
-  margin: 92px auto 0;
-  min-width: 62vw;
-  max-width: 92.50vw;
+  min-width: 1184px;
 }
 }
 

@@ -15,9 +15,10 @@
 
 @media (min-width: 1281px) {
   .lead__title {
-    font-size: 6.5vw;
+    /*min-width: calc(100% - 560px);*/
+    max-width: 720px;
   }
-  }
+}
 
 @media (max-width: 1024px) {
   .lead__title {

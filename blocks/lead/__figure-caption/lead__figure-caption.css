@@ -2,7 +2,7 @@
   display: inline;
   margin: 8px 0 0;
   padding: 0;
-  max-width: 12.32vw;
+  max-width: 12.42vw;
   min-height: 14px;
   font-style: normal;
   font-weight: 400;
@@ -11,12 +11,6 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-@media (min-width: 1281px) {
-  .lead__figure-caption {
-    font-size: 0.78vw;
-  }
 }
 
 @media (max-width: 768px) {

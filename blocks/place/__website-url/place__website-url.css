@@ -9,9 +9,3 @@
   letter-spacing: 2px;
   color: #AAAAAA;
 }
-
-@media (min-width: 1281px) {
-  .place__website-url {
-    font-size: 0.94vw;
-  }
-}
