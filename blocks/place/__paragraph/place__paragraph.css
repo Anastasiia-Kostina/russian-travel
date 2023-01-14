@@ -7,10 +7,3 @@
 .place__paragraph:not(:last-child) {
   margin: 0 0 26px 0;
 }
-
-@media (min-width: 1281px) {
-  .place__paragraph {
-    min-width: 484px;
-    max-width: 49.19%;
-  }
-}

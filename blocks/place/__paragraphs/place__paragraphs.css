@@ -28,8 +28,8 @@
 
 @media (min-width: 1281px) {
   .place__paragraphs {
-    min-width: 49.19%;
-    max-width: 484px;
+    min-width: 484px;
+    max-width: 49.19%;
   }
 }
 
